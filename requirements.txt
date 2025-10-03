@@ -1,0 +1,12 @@
+tensorflow==2.13.0
+keras==2.13.1
+hls4ml==0.8.0
+numpy>=1.23,<1.27
+scipy>=1.10
+matplotlib>=3.7,<3.9
+h5py>=3.8
+tf2onnx>=1.16.1
+
+# Jupyter support (optional, for CNNConversionToFPGA.ipynb)
+jupyter
+notebook
