@@ -18,7 +18,7 @@ CONFIG = {
     "sample": "data/Event2016_Stn14_1454540191.0_Chi0.66_SNR5.57.npy",
 
     # HLS tool/flow
-    "part": "xc7z020clg400-1",
+    "part": "xcku5p-ffvb676-2-e",
     "backend": "Vitis",            # "Vivado" or "Vitis"
     "io": "io_stream",              # "io_stream" or "io_parallel"
 
