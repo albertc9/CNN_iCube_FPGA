@@ -1,0 +1,2066 @@
+{
+  "metadata": {
+    "model_path": "models/09.24.25_14-33_all_amps_1D_CNN_model_2Layer.h5",
+    "model_checksum": "174392f45b574494",
+    "sample_path": "data/Event2016_Stn14_1454540191.0_Chi0.66_SNR5.57.npy",
+    "tensorflow_version": "2.20.0",
+    "numpy_version": "2.2.6",
+    "random_seed": 42,
+    "hls_config": {
+      "Model": {
+        "Precision": "ap_fixed<16,6>",
+        "ReuseFactor": 1
+      },
+      "LayerName": {}
+    }
+  },
+  "precision_sweep": {
+    "original_sample": {
+      "ap_fixed<32,16>": {
+        "weights_only": {
+          "mean_absolute_error": 1.0013580322265625e-05,
+          "root_mean_square_error": 1.0013580322265625e-05,
+          "max_absolute_error": 1.0013580322265625e-05,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 3.975629806518555e-05,
+          "root_mean_square_error": 3.975629806518555e-05,
+          "max_absolute_error": 3.975629806518555e-05,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 3.975629806518555e-05,
+          "root_mean_square_error": 3.975629806518555e-05,
+          "max_absolute_error": 3.975629806518555e-05,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<24,8>": {
+        "weights_only": {
+          "mean_absolute_error": 1.0013580322265625e-05,
+          "root_mean_square_error": 1.0013580322265625e-05,
+          "max_absolute_error": 1.0013580322265625e-05,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 3.975629806518555e-05,
+          "root_mean_square_error": 3.975629806518555e-05,
+          "max_absolute_error": 3.975629806518555e-05,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 3.975629806518555e-05,
+          "root_mean_square_error": 3.975629806518555e-05,
+          "max_absolute_error": 3.975629806518555e-05,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<20,8>": {
+        "weights_only": {
+          "mean_absolute_error": 0.00022995471954345703,
+          "root_mean_square_error": 0.00022995471954345703,
+          "max_absolute_error": 0.00022995471954345703,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 0.00014656782150268555,
+          "root_mean_square_error": 0.00014656782150268555,
+          "max_absolute_error": 0.00014656782150268555,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 0.00014656782150268555,
+          "root_mean_square_error": 0.00014656782150268555,
+          "max_absolute_error": 0.00014656782150268555,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<16,6>": {
+        "weights_only": {
+          "mean_absolute_error": 0.00029850006103515625,
+          "root_mean_square_error": 0.00029850006103515625,
+          "max_absolute_error": 0.00029850006103515625,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 9.757280349731445e-05,
+          "root_mean_square_error": 9.757280349731445e-05,
+          "max_absolute_error": 9.757280349731445e-05,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 9.757280349731445e-05,
+          "root_mean_square_error": 9.757280349731445e-05,
+          "max_absolute_error": 9.757280349731445e-05,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<12,4>": {
+        "weights_only": {
+          "mean_absolute_error": 0.003509819507598877,
+          "root_mean_square_error": 0.003509819507598877,
+          "max_absolute_error": 0.003509819507598877,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 0.0030272603034973145,
+          "root_mean_square_error": 0.0030272603034973145,
+          "max_absolute_error": 0.0030272603034973145,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 0.0008789896965026855,
+          "root_mean_square_error": 0.0008789896965026855,
+          "max_absolute_error": 0.0008789896965026855,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<10,3>": {
+        "weights_only": {
+          "mean_absolute_error": 0.03416568040847778,
+          "root_mean_square_error": 0.03416568040847778,
+          "max_absolute_error": 0.03416568040847778,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 0.0030272603034973145,
+          "root_mean_square_error": 0.0030272603034973145,
+          "max_absolute_error": 0.0030272603034973145,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 0.043847739696502686,
+          "root_mean_square_error": 0.043847739696502686,
+          "max_absolute_error": 0.043847739696502686,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<8,3>": {
+        "weights_only": {
+          "mean_absolute_error": 0.08155357837677002,
+          "root_mean_square_error": 0.08155357837677002,
+          "max_absolute_error": 0.08155357837677002,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 0.020410239696502686,
+          "root_mean_square_error": 0.020410239696502686,
+          "max_absolute_error": 0.020410239696502686,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 0.08291023969650269,
+          "root_mean_square_error": 0.08291023969650269,
+          "max_absolute_error": 0.08291023969650269,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      }
+    },
+    "random_normal_100": {
+      "ap_fixed<32,16>": {
+        "weights_only": {
+          "mean_absolute_error": 5.175538664303758e-09,
+          "root_mean_square_error": 4.189832125689463e-08,
+          "max_absolute_error": 4.0512531995773315e-07,
+          "cosine_similarity": 0.9999998807907104,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 1.7574737398717843e-07,
+          "root_mean_square_error": 7.774614800837298e-07,
+          "max_absolute_error": 5.142297595739365e-06,
+          "cosine_similarity": 0.9999979138374329,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 1.7574737398717843e-07,
+          "root_mean_square_error": 7.774614800837298e-07,
+          "max_absolute_error": 5.142297595739365e-06,
+          "cosine_similarity": 0.9999979138374329,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<24,8>": {
+        "weights_only": {
+          "mean_absolute_error": 5.175538664303758e-09,
+          "root_mean_square_error": 4.189832125689463e-08,
+          "max_absolute_error": 4.0512531995773315e-07,
+          "cosine_similarity": 0.9999998807907104,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 1.7574737398717843e-07,
+          "root_mean_square_error": 7.774614800837298e-07,
+          "max_absolute_error": 5.142297595739365e-06,
+          "cosine_similarity": 0.9999979138374329,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 1.7574737398717843e-07,
+          "root_mean_square_error": 7.774614800837298e-07,
+          "max_absolute_error": 5.142297595739365e-06,
+          "cosine_similarity": 0.9999979138374329,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<20,8>": {
+        "weights_only": {
+          "mean_absolute_error": 4.082127134097391e-07,
+          "root_mean_square_error": 3.94770540879108e-06,
+          "max_absolute_error": 3.945687785744667e-05,
+          "cosine_similarity": 0.9999998807907104,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 1.4461923001363175e-06,
+          "root_mean_square_error": 1.0087380360346287e-05,
+          "max_absolute_error": 9.214524470735341e-05,
+          "cosine_similarity": 0.9994895458221436,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 1.4461923001363175e-06,
+          "root_mean_square_error": 1.0087380360346287e-05,
+          "max_absolute_error": 9.214524470735341e-05,
+          "cosine_similarity": 0.9994895458221436,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<16,6>": {
+        "weights_only": {
+          "mean_absolute_error": 1.5043875691844733e-06,
+          "root_mean_square_error": 1.486462315369863e-05,
+          "max_absolute_error": 0.00014863861724734306,
+          "cosine_similarity": 0.9999992847442627,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 1.4461923001363175e-06,
+          "root_mean_square_error": 1.0087380360346287e-05,
+          "max_absolute_error": 9.214524470735341e-05,
+          "cosine_similarity": 0.9994895458221436,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 1.4461923001363175e-06,
+          "root_mean_square_error": 1.0087380360346287e-05,
+          "max_absolute_error": 9.214524470735341e-05,
+          "cosine_similarity": 0.9994895458221436,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<12,4>": {
+        "weights_only": {
+          "mean_absolute_error": 2.3627610516996356e-06,
+          "root_mean_square_error": 2.3134170987759717e-05,
+          "max_absolute_error": 0.00023129908367991447,
+          "cosine_similarity": 0.9999994039535522,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 1.1211816854483914e-05,
+          "root_mean_square_error": 0.00010213781206402928,
+          "max_absolute_error": 0.0010171965695917606,
+          "cosine_similarity": 0.9994896650314331,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 1.1211816854483914e-05,
+          "root_mean_square_error": 0.00010213781206402928,
+          "max_absolute_error": 0.0010171965695917606,
+          "cosine_similarity": 0.9994896650314331,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<10,3>": {
+        "weights_only": {
+          "mean_absolute_error": 1.0656642643880332e-06,
+          "root_mean_square_error": 8.348930350621231e-06,
+          "max_absolute_error": 8.058687672019005e-05,
+          "cosine_similarity": 0.9999790191650391,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 2.9930386517662555e-05,
+          "root_mean_square_error": 0.0002890528121497482,
+          "max_absolute_error": 0.0028890534304082394,
+          "cosine_similarity": 0.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 2.9930386517662555e-05,
+          "root_mean_square_error": 0.0002890528121497482,
+          "max_absolute_error": 0.0028890534304082394,
+          "cosine_similarity": 0.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<8,3>": {
+        "weights_only": {
+          "mean_absolute_error": 0.00014529844338539988,
+          "root_mean_square_error": 0.0013954625464975834,
+          "max_absolute_error": 0.013944381847977638,
+          "cosine_similarity": 0.9999856352806091,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 2.9930386517662555e-05,
+          "root_mean_square_error": 0.0002890528121497482,
+          "max_absolute_error": 0.0028890534304082394,
+          "cosine_similarity": 0.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 0.000284649315290153,
+          "root_mean_square_error": 0.0028361096046864986,
+          "max_absolute_error": 0.028360946103930473,
+          "cosine_similarity": 0.9994897246360779,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      }
+    },
+    "random_uniform_100": {
+      "ap_fixed<32,16>": {
+        "weights_only": {
+          "mean_absolute_error": 1.118779209718923e-06,
+          "root_mean_square_error": 1.118779164244188e-05,
+          "max_absolute_error": 0.0001118779182434082,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 2.2161007109389175e-06,
+          "root_mean_square_error": 2.2161006199894473e-05,
+          "max_absolute_error": 0.00022161006927490234,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 2.25305555545674e-07,
+          "root_mean_square_error": 2.2530555270350305e-06,
+          "max_absolute_error": 2.2530555725097656e-05,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<24,8>": {
+        "weights_only": {
+          "mean_absolute_error": 1.118779209718923e-06,
+          "root_mean_square_error": 1.118779164244188e-05,
+          "max_absolute_error": 0.0001118779182434082,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 2.2161007109389175e-06,
+          "root_mean_square_error": 2.2161006199894473e-05,
+          "max_absolute_error": 0.00022161006927490234,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 2.25305555545674e-07,
+          "root_mean_square_error": 2.2530555270350305e-06,
+          "max_absolute_error": 2.2530555725097656e-05,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<20,8>": {
+        "weights_only": {
+          "mean_absolute_error": 2.6814341254066676e-05,
+          "root_mean_square_error": 0.000268143427092582,
+          "max_absolute_error": 0.002681434154510498,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 4.810094651475083e-06,
+          "root_mean_square_error": 4.8100948333740234e-05,
+          "max_absolute_error": 0.00048100948333740234,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 2.6782750865095295e-05,
+          "root_mean_square_error": 0.00026782750501297414,
+          "max_absolute_error": 0.0026782751083374023,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<16,6>": {
+        "weights_only": {
+          "mean_absolute_error": 3.925561941287015e-06,
+          "root_mean_square_error": 3.925562123185955e-05,
+          "max_absolute_error": 0.00039255619049072266,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 2.3686886834184406e-06,
+          "root_mean_square_error": 2.3686885469942354e-05,
+          "max_absolute_error": 0.00023686885833740234,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 7.396936325676506e-06,
+          "root_mean_square_error": 7.396936416625977e-05,
+          "max_absolute_error": 0.0007396936416625977,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<12,4>": {
+        "weights_only": {
+          "mean_absolute_error": 2.023339220613707e-05,
+          "root_mean_square_error": 0.0002023339329753071,
+          "max_absolute_error": 0.00202333927154541,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 0.000949634297285229,
+          "root_mean_square_error": 0.009496343322098255,
+          "max_absolute_error": 0.0949634313583374,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.006415966386554622
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 0.000949634297285229,
+          "root_mean_square_error": 0.009496343322098255,
+          "max_absolute_error": 0.0949634313583374,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.006373949579831933
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<10,3>": {
+        "weights_only": {
+          "mean_absolute_error": 5.6033135479083285e-05,
+          "root_mean_square_error": 0.00056033133296296,
+          "max_absolute_error": 0.005603313446044922,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 0.009543384425342083,
+          "root_mean_square_error": 0.09543384611606598,
+          "max_absolute_error": 0.9543384313583374,
+          "cosine_similarity": 0.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 4.048582995951417e-06
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.12571428571428572
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 0.009543384425342083,
+          "root_mean_square_error": 0.09543384611606598,
+          "max_absolute_error": 0.9543384313583374,
+          "cosine_similarity": 0.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 4.048582995951417e-06
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.12550840336134453
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<8,3>": {
+        "weights_only": {
+          "mean_absolute_error": 0.00044831811101175845,
+          "root_mean_square_error": 0.0044831810519099236,
+          "max_absolute_error": 0.044831812381744385,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 0.009543384425342083,
+          "root_mean_square_error": 0.09543384611606598,
+          "max_absolute_error": 0.9543384313583374,
+          "cosine_similarity": 0.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 4.048582995951417e-06
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.1266218487394958
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 0.009543384425342083,
+          "root_mean_square_error": 0.09543384611606598,
+          "max_absolute_error": 0.9543384313583374,
+          "cosine_similarity": 0.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 4.048582995951417e-06
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.12761764705882353
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      }
+    },
+    "scaled_samples": {
+      "ap_fixed<32,16>": {
+        "weights_only": {
+          "mean_absolute_error": 2.0587117433024105e-06,
+          "root_mean_square_error": 4.47951697424287e-06,
+          "max_absolute_error": 1.0013580322265625e-05,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 3.1695467441750225e-06,
+          "root_mean_square_error": 3.741349473784794e-06,
+          "max_absolute_error": 6.020069122314453e-06,
+          "cosine_similarity": 1.0000001192092896,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 3.1695467441750225e-06,
+          "root_mean_square_error": 3.741349473784794e-06,
+          "max_absolute_error": 6.020069122314453e-06,
+          "cosine_similarity": 1.0000001192092896,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<24,8>": {
+        "weights_only": {
+          "mean_absolute_error": 2.0587117433024105e-06,
+          "root_mean_square_error": 4.47951697424287e-06,
+          "max_absolute_error": 1.0013580322265625e-05,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 3.1695467441750225e-06,
+          "root_mean_square_error": 3.741349473784794e-06,
+          "max_absolute_error": 6.020069122314453e-06,
+          "cosine_similarity": 1.0000001192092896,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 3.1695467441750225e-06,
+          "root_mean_square_error": 3.741349473784794e-06,
+          "max_absolute_error": 6.020069122314453e-06,
+          "cosine_similarity": 1.0000001192092896,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<20,8>": {
+        "weights_only": {
+          "mean_absolute_error": 5.09038582094945e-05,
+          "root_mean_square_error": 0.00010315243707736954,
+          "max_absolute_error": 0.00022995471954345703,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 0.00011708878446370363,
+          "root_mean_square_error": 0.00018259896023664623,
+          "max_absolute_error": 0.00039070844650268555,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 5.8461657317820936e-05,
+          "root_mean_square_error": 6.867205956950784e-05,
+          "max_absolute_error": 9.757280349731445e-05,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<16,6>": {
+        "weights_only": {
+          "mean_absolute_error": 6.773858331143856e-05,
+          "root_mean_square_error": 0.00013402069453150034,
+          "max_absolute_error": 0.00029850006103515625,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 0.0001876339956652373,
+          "root_mean_square_error": 0.00022592616733163595,
+          "max_absolute_error": 0.0003387928009033203,
+          "cosine_similarity": 1.0,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 0.0003829465131275356,
+          "root_mean_square_error": 0.0005290480912663043,
+          "max_absolute_error": 0.0010741353034973145,
+          "cosine_similarity": 0.9999998211860657,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<12,4>": {
+        "weights_only": {
+          "mean_absolute_error": 0.0007243133150041103,
+          "root_mean_square_error": 0.0015699206851422787,
+          "max_absolute_error": 0.003509819507598877,
+          "cosine_similarity": 0.9999985098838806,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 0.0009688840364106,
+          "root_mean_square_error": 0.0014666954521089792,
+          "max_absolute_error": 0.0030272603034973145,
+          "cosine_similarity": 0.9999983906745911,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0012605042016806723
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 0.0009688840364106,
+          "root_mean_square_error": 0.0014666954521089792,
+          "max_absolute_error": 0.0030272603034973145,
+          "cosine_similarity": 0.9999983906745911,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0012605042016806723
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<10,3>": {
+        "weights_only": {
+          "mean_absolute_error": 0.007026899605989456,
+          "root_mean_square_error": 0.015283212065696716,
+          "max_absolute_error": 0.03416568040847778,
+          "cosine_similarity": 0.9998592734336853,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 0.0009688840364106,
+          "root_mean_square_error": 0.0014666954521089792,
+          "max_absolute_error": 0.0030272603034973145,
+          "cosine_similarity": 0.9999983906745911,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.015126050420168067
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 0.009132979437708855,
+          "root_mean_square_error": 0.019617419689893723,
+          "max_absolute_error": 0.043847739696502686,
+          "cosine_similarity": 0.9997713565826416,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.015210084033613446
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      },
+      "ap_fixed<8,3>": {
+        "weights_only": {
+          "mean_absolute_error": 0.03558181971311569,
+          "root_mean_square_error": 0.05631750077009201,
+          "max_absolute_error": 0.09595420956611633,
+          "cosine_similarity": 0.9976918697357178,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "activations_only": {
+          "mean_absolute_error": 0.004445479717105627,
+          "root_mean_square_error": 0.009145158343017101,
+          "max_absolute_error": 0.020410239696502686,
+          "cosine_similarity": 0.9999502897262573,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.015378151260504201
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        },
+        "full_quantization": {
+          "mean_absolute_error": 0.05397450923919678,
+          "root_mean_square_error": 0.09120352566242218,
+          "max_absolute_error": 0.18632256984710693,
+          "cosine_similarity": 0.9934702515602112,
+          "saturation_stats": {
+            "conv2d": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            },
+            "conv2d_1": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.015126050420168067
+            },
+            "dense": {
+              "weight_saturation": 0.0,
+              "bias_saturation": 0.0,
+              "activation_saturation": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "per_dataset_analysis": {},
+  "layer_analysis": {
+    "float_vs_quantized_outputs": {
+      "conv2d": {
+        "mean_absolute_error": 9.210077405441552e-05,
+        "root_mean_square_error": 0.00017285929061472416,
+        "max_absolute_error": 0.000487741082906723,
+        "cosine_similarity": 0.9999890327453613
+      },
+      "conv2d_1": {
+        "mean_absolute_error": 0.00016850142856128514,
+        "root_mean_square_error": 0.00023459826479665935,
+        "max_absolute_error": 0.00048828125,
+        "cosine_similarity": 0.9999995231628418
+      },
+      "dense": {
+        "mean_absolute_error": 0.00031954050064086914,
+        "root_mean_square_error": 0.00031954050064086914,
+        "max_absolute_error": 0.00031954050064086914,
+        "cosine_similarity": 1.0
+      }
+    },
+    "saturation_analysis": {
+      "conv2d": {
+        "weight_saturation": 0.0,
+        "bias_saturation": 0.0,
+        "activation_saturation": 0.0
+      },
+      "conv2d_1": {
+        "weight_saturation": 0.0,
+        "bias_saturation": 0.0,
+        "activation_saturation": 0.0
+      },
+      "dense": {
+        "weight_saturation": 0.0,
+        "bias_saturation": 0.0,
+        "activation_saturation": 0.0
+      }
+    },
+    "layer_configs": {
+      "conv2d": {
+        "precision": "ap_fixed<16,6>"
+      },
+      "conv2d_1": {
+        "precision": "ap_fixed<16,6>"
+      },
+      "dense": {
+        "precision": "ap_fixed<16,6>"
+      }
+    }
+  }
+}
