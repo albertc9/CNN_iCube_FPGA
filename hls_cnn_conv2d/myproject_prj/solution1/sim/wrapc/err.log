@@ -1,0 +1,12 @@
+e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:2048-i4096:4096-n8:16:32:64-S128-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024/home/work1/Apps/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: /lib64/libm.so.6: unknown type [0x13] section `.relr.dyn'
+/home/work1/Apps/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: skipping incompatible /lib64/libm.so.6 when searching for /lib64/libm.so.6
+/home/work1/Apps/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: cannot find /lib64/libm.so.6
+/home/work1/Apps/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: /lib64/libm.so.6: unknown type [0x13] section `.relr.dyn'
+/home/work1/Apps/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: skipping incompatible /lib64/libm.so.6 when searching for /lib64/libm.so.6
+/home/work1/Apps/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: /lib64/libmvec.so.1: unknown type [0x13] section `.relr.dyn'
+/home/work1/Apps/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: skipping incompatible /lib64/libmvec.so.1 when searching for /lib64/libmvec.so.1
+/home/work1/Apps/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: cannot find /lib64/libmvec.so.1
+/home/work1/Apps/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: /lib64/libmvec.so.1: unknown type [0x13] section `.relr.dyn'
+/home/work1/Apps/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: skipping incompatible /lib64/libmvec.so.1 when searching for /lib64/libmvec.so.1
+collect2: error: ld returned 1 exit status
+make: *** [Makefile.rules:318: cosim.tv.exe] Error 1

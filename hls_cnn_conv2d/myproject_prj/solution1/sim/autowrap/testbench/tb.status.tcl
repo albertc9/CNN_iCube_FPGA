@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp

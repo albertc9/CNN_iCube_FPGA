@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1759620378148">
+  <ports id="1" name="layer7_out" type="PortType" coreName="FIFO_SRL" coreId="3621216858" bitwidth="16" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="layer8_out" type="PortType" originalName="res" coreId="2788189136" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="35" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="38" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="43" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="48" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="49" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="52" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="55" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="58" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="60" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="63" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="64" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="65" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="66" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="68" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="72" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="75" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="80" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="84" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="87" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="90" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="94" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="95" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="96" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="97" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="98" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="99" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="100" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="103" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="104" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="105" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="108" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@ports.1"/>
+  <edges id="109" source_obj="//@blocks.0/@node_objs.23" sink_obj="//@blocks.0/@node_objs.24"/>
+  <blocks id="32" name="sigmoid&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0>,1u>,sigmoid_config8>" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="in_data" lineNumber="83" originalName="in_data" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="16" opcode="read" m_display="0" m_delay="1.83" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="83" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>layer7_out</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="shl_ln" lineNumber="90" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="shl_ln_fu_88_p3" coreId="1717530721" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="26" opcode="bitconcatenate" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="90" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="tmp_2" lineNumber="90" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="tmp_2_reg_225" coreId="1717530721" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="12" opcode="partselect" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="90" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="sext_ln90" lineNumber="90" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="sext_ln90_fu_130_p1" coreId="1717530721" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="13" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="90" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="icmp_ln90" lineNumber="90" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="icmp_ln90_fu_106_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.95" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="90" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="trunc_ln90" lineNumber="90" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="trunc_ln90_fu_112_p1" coreId="1" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="4" opcode="trunc" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="90" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="tmp_1" lineNumber="90" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="tmp_1_fu_116_p3" coreId="7" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="10" opcode="bitconcatenate" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="90" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="icmp_ln90_1" lineNumber="90" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="icmp_ln90_1_fu_124_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.78" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="90" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="add_ln90" lineNumber="90" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="add_ln90_fu_133_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="13" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.8" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="90" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="select_ln90" lineNumber="90" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="select_ln90_fu_139_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="13" opcode="select" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="90" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="data_round" lineNumber="90" originalName="data_round" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="data_round_fu_146_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="13" opcode="select" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="90" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="index" lineNumber="91" originalName="index" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="index_fu_153_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="13" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.82" m_topoIndex="12" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="91" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="trunc_ln91" lineNumber="91" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="trunc_ln91_fu_159_p1" coreId="45456" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="10" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="91" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="tmp" lineNumber="92" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="tmp_fu_163_p3" coreId="1869833586" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="92" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="tmp_3" lineNumber="94" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="tmp_3_fu_171_p4" coreId="2788498824" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="3" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="94" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="icmp_ln94" lineNumber="94" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="icmp_ln94_fu_181_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.67" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="94" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="xor_ln92" lineNumber="92" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="xor_ln92_fu_187_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="1" opcode="xor" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="92" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="select_ln92" lineNumber="92" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="select_ln92_fu_193_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="10" opcode="select" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="92" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="or_ln92" lineNumber="92" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="or_ln92_fu_201_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="92" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="index_1" lineNumber="92" originalName="index" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="index_1_fu_207_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="10" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.38" m_topoIndex="20" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="92" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="zext_ln96" lineNumber="96" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="zext_ln96_fu_215_p1" coreId="2788506792" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="96" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="sigmoid_table_addr" lineNumber="96" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." coreId="2788303244" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="10" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="96" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="sigmoid_table_load" lineNumber="96" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="10" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="96" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="zext_ln96_1" lineNumber="96" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." rtlName="layer8_out_TDATA_int_regslice" coreId="2788304357" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" bitwidth="16" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="96" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="layer8_out_write_ln99" lineNumber="99" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="123" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" opcode="write" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="1.0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="99" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>layer8_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="_ln101" lineNumber="101" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory="../." coreId="2788513496" contextFuncName="sigmoid_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_sigmoid_config8_s" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="101" fileDirectory="/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d" functionName="sigmoid&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, sigmoid_config8&amp;gt;"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_activation_stream.h">
+      <validLinenumbers>83</validLinenumbers>
+      <validLinenumbers>90</validLinenumbers>
+      <validLinenumbers>91</validLinenumbers>
+      <validLinenumbers>92</validLinenumbers>
+      <validLinenumbers>94</validLinenumbers>
+      <validLinenumbers>96</validLinenumbers>
+      <validLinenumbers>99</validLinenumbers>
+      <validLinenumbers>101</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <regnodes realName="zext_ln96_1_reg_245">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_2_reg_225">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln90_reg_230">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="sigmoid_table_addr_reg_240">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln90_1_reg_235">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <expressionNodes realName="icmp_ln94_fu_181">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln90_fu_130">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln90_1_fu_124">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln91_fu_159">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln92_fu_187">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_116">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln90_fu_112">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln92_fu_201">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln92_fu_193">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln_fu_88">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_round_fu_146">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="index_1_fu_207">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_163">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln90_fu_133">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_171">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="index_fu_153">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln96_1_fu_220">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_96">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln90_fu_139">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln96_fu_215">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln90_fu_106">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sigmoid_table_addr_gep_fu_75">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="grp_write_fu_68">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="in_data_read_fu_62">
+    <nodeIds>6</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="sigmoid_table">
+    <nodeIds>28</nodeIds>
+  </memoryPorts>
+  <ioPorts name="layer7_out">
+    <contents name="read">
+      <nodeIds>6</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="layer8_out">
+    <contents name="write">
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="28" stage="1" latency="2"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="2"/>
+      <operations id="31" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="3" mMaxLatency="3">
+      <basicBlocks>32</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

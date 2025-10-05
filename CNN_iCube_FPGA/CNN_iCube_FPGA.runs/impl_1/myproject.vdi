@@ -1,0 +1,615 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Oct  4 18:03:27 2025
+# Process ID: 1656717
+# Current directory: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/impl_1
+# Command line: vivado -log myproject.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source myproject.tcl -notrace
+# Log file: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/impl_1/myproject.vdi
+# Journal file: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/impl_1/vivado.jou
+# Running On: dhcp-172-31-232-100.mobile.uci.edu, OS: Linux, CPU Frequency: 848.713 MHz, CPU Physical cores: 24, Host memory: 16427 MB
+#-----------------------------------------------------------
+WARNING: [Runs 36-547] User Strategy 'Vivado Implementation Defaults' from file '/home/work1/.Xilinx/Vivado/2023.2/strategies/Vivado Implementation Defaults.Vivado Implementation 2020.psg' discarded because strategy with same name already parsed from '/home/work1/Apps/Vivado/2023.2/strategies/VDI2020.psg'
+WARNING: [Runs 36-547] User Strategy 'Vivado Synthesis Defaults' from file '/home/work1/.Xilinx/Vivado/2023.2/strategies/Vivado Synthesis Defaults.Vivado Synthesis 2020.psg' discarded because strategy with same name already parsed from '/home/work1/Apps/Vivado/2023.2/strategies/VDS2020.psg'
+source myproject.tcl -notrace
+Command: link_design -top myproject -part xcku5p-ffvb676-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-e
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2526.805 ; gain = 0.000 ; free physical = 5043 ; free virtual = 25357
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/constrs_1/imports/constraints/myproject_ooc.xdc]
+Finished Parsing XDC File [/home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/constrs_1/imports/constraints/myproject_ooc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2640.332 ; gain = 0.000 ; free physical = 5030 ; free virtual = 25360
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 5 instances
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2640.367 ; gain = 1103.531 ; free physical = 5031 ; free virtual = 25360
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku5p'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.93 ; elapsed = 00:00:00.52 . Memory (MB): peak = 2732.082 ; gain = 91.715 ; free physical = 4993 ; free virtual = 25323
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 194d9ac23
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.87 . Memory (MB): peak = 3057.312 ; gain = 325.230 ; free physical = 4770 ; free virtual = 25154
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 194d9ac23
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3362.117 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 194d9ac23
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3362.117 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+Phase 1 Initialization | Checksum: 194d9ac23
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3362.117 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 194d9ac23
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3362.117 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24850
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 194d9ac23
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3362.117 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+Phase 2 Timer Update And Timing Data Collection | Checksum: 194d9ac23
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3362.117 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 2 inverters resulting in an inversion of 10 pins
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2726 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: aba551b7
+
+Time (s): cpu = 00:00:00.43 ; elapsed = 00:00:00.19 . Memory (MB): peak = 3362.117 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+Retarget | Checksum: aba551b7
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 2 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: aba551b7
+
+Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.22 . Memory (MB): peak = 3362.117 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+Constant propagation | Checksum: aba551b7
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 17a4acf1b
+
+Time (s): cpu = 00:00:00.49 ; elapsed = 00:00:00.25 . Memory (MB): peak = 3362.117 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+Sweep | Checksum: 17a4acf1b
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 17a4acf1b
+
+Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.28 . Memory (MB): peak = 3394.133 ; gain = 32.016 ; free physical = 4458 ; free virtual = 24851
+BUFG optimization | Checksum: 17a4acf1b
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 17a4acf1b
+
+Time (s): cpu = 00:00:00.54 ; elapsed = 00:00:00.29 . Memory (MB): peak = 3394.133 ; gain = 32.016 ; free physical = 4458 ; free virtual = 24851
+Shift Register Optimization | Checksum: 17a4acf1b
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 17a4acf1b
+
+Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.29 . Memory (MB): peak = 3394.133 ; gain = 32.016 ; free physical = 4458 ; free virtual = 24851
+Post Processing Netlist | Checksum: 17a4acf1b
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 4a54b5de
+
+Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.32 . Memory (MB): peak = 3394.133 ; gain = 32.016 ; free physical = 4458 ; free virtual = 24851
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3394.133 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 4a54b5de
+
+Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.33 . Memory (MB): peak = 3394.133 ; gain = 32.016 ; free physical = 4458 ; free virtual = 24851
+Phase 9 Finalization | Checksum: 4a54b5de
+
+Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.33 . Memory (MB): peak = 3394.133 ; gain = 32.016 ; free physical = 4458 ; free virtual = 24851
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               2  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 4a54b5de
+
+Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.33 . Memory (MB): peak = 3394.133 ; gain = 32.016 ; free physical = 4458 ; free virtual = 24851
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3394.133 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 4a54b5de
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3394.133 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 4a54b5de
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3394.133 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3394.133 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+Ending Netlist Obfuscation Task | Checksum: 4a54b5de
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3394.133 ; gain = 0.000 ; free physical = 4458 ; free virtual = 24851
+INFO: [Common 17-83] Releasing license: Implementation
+27 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [runtcl-4] Executing : report_drc -file myproject_drc_opted.rpt -pb myproject_drc_opted.pb -rpx myproject_drc_opted.rpx
+Command: report_drc -file myproject_drc_opted.rpt -pb myproject_drc_opted.pb -rpx myproject_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/work1/Apps/Vivado/2023.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/impl_1/myproject_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3497.555 ; gain = 0.000 ; free physical = 4305 ; free virtual = 24704
+INFO: [Common 17-1381] The checkpoint '/home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/impl_1/myproject_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku5p'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3505.492 ; gain = 0.000 ; free physical = 4287 ; free virtual = 24684
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 0dbcf7e7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3505.492 ; gain = 0.000 ; free physical = 4287 ; free virtual = 24684
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3505.492 ; gain = 0.000 ; free physical = 4287 ; free virtual = 24684
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (343) is greater than number of available pins (280).
+The following are banks with available pins: 
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 2 Drv: 12  has only 280 sites available on device, but needs 339 sites.
+	Term: w2_Addr_A[0]
+	Term: w2_Addr_A[1]
+	Term: w2_Addr_A[2]
+	Term: w2_Addr_A[3]
+	Term: w2_Addr_A[4]
+	Term: w2_Addr_A[5]
+	Term: w2_Addr_A[6]
+	Term: w2_Addr_A[7]
+	Term: w2_Addr_A[8]
+	Term: w2_Addr_A[9]
+	Term: w2_Addr_A[10]
+	Term: w2_Addr_A[11]
+	Term: w2_Addr_A[12]
+	Term: w2_Addr_A[13]
+	Term: w2_Addr_A[14]
+	Term: w2_Addr_A[15]
+	Term: w2_Addr_A[16]
+	Term: w2_Addr_A[17]
+	Term: w2_Addr_A[18]
+	Term: w2_Addr_A[19]
+	Term: w2_Addr_A[20]
+	Term: w2_Addr_A[21]
+	Term: w2_Addr_A[22]
+	Term: w2_Addr_A[23]
+	Term: w2_Addr_A[24]
+	Term: w2_Addr_A[25]
+	Term: w2_Addr_A[26]
+	Term: w2_Addr_A[27]
+	Term: w2_Addr_A[28]
+	Term: w2_Addr_A[29]
+	Term: w2_Addr_A[30]
+	Term: w2_Addr_A[31]
+	Term: w2_Addr_B[0]
+	Term: w2_Addr_B[1]
+	Term: w2_Addr_B[2]
+	Term: w2_Addr_B[3]
+	Term: w2_Addr_B[4]
+	Term: w2_Addr_B[5]
+	Term: w2_Addr_B[6]
+	Term: w2_Addr_B[7]
+	Term: w2_Addr_B[8]
+	Term: w2_Addr_B[9]
+	Term: w2_Addr_B[10]
+	Term: w2_Addr_B[11]
+	Term: w2_Addr_B[12]
+	Term: w2_Addr_B[13]
+	Term: w2_Addr_B[14]
+	Term: w2_Addr_B[15]
+	Term: w2_Addr_B[16]
+	Term: w2_Addr_B[17]
+	Term: w2_Addr_B[18]
+	Term: w2_Addr_B[19]
+	Term: w2_Addr_B[20]
+	Term: w2_Addr_B[21]
+	Term: w2_Addr_B[22]
+	Term: w2_Addr_B[23]
+	Term: w2_Addr_B[24]
+	Term: w2_Addr_B[25]
+	Term: w2_Addr_B[26]
+	Term: w2_Addr_B[27]
+	Term: w2_Addr_B[28]
+	Term: w2_Addr_B[29]
+	Term: w2_Addr_B[30]
+	Term: w2_Addr_B[31]
+	Term: w4_Addr_A[0]
+	Term: w4_Addr_A[1]
+	Term: w4_Addr_A[2]
+	Term: w4_Addr_A[3]
+	Term: w4_Addr_A[4]
+	Term: w4_Addr_A[5]
+	Term: w4_Addr_A[6]
+	Term: w4_Addr_A[7]
+	Term: w4_Addr_A[8]
+	Term: w4_Addr_A[9]
+	Term: w4_Addr_A[10]
+	Term: w4_Addr_A[11]
+	Term: w4_Addr_A[12]
+	Term: w4_Addr_A[13]
+	Term: w4_Addr_A[14]
+	Term: w4_Addr_A[15]
+	Term: w4_Addr_A[16]
+	Term: w4_Addr_A[17]
+	Term: w4_Addr_A[18]
+	Term: w4_Addr_A[19]
+	Term: w4_Addr_A[20]
+	Term: w4_Addr_A[21]
+	Term: w4_Addr_A[22]
+	Term: w4_Addr_A[23]
+	Term: w4_Addr_A[24]
+	Term: w4_Addr_A[25]
+	Term: w4_Addr_A[26]
+	Term: w4_Addr_A[27]
+	Term: w4_Addr_A[28]
+	Term: w4_Addr_A[29]
+	Term: w4_Addr_A[30]
+	Term: w4_Addr_A[31]
+	Term: w4_Addr_B[0]
+	Term: w4_Addr_B[1]
+	Term: w4_Addr_B[2]
+	Term: w4_Addr_B[3]
+	Term: w4_Addr_B[4]
+	Term: w4_Addr_B[5]
+	Term: w4_Addr_B[6]
+	Term: w4_Addr_B[7]
+	Term: w4_Addr_B[8]
+	Term: w4_Addr_B[9]
+	Term: w4_Addr_B[10]
+	Term: w4_Addr_B[11]
+	Term: w4_Addr_B[12]
+	Term: w4_Addr_B[13]
+	Term: w4_Addr_B[14]
+	Term: w4_Addr_B[15]
+	Term: w4_Addr_B[16]
+	Term: w4_Addr_B[17]
+	Term: w4_Addr_B[18]
+	Term: w4_Addr_B[19]
+	Term: w4_Addr_B[20]
+	Term: w4_Addr_B[21]
+	Term: w4_Addr_B[22]
+	Term: w4_Addr_B[23]
+	Term: w4_Addr_B[24]
+	Term: w4_Addr_B[25]
+	Term: w4_Addr_B[26]
+	Term: w4_Addr_B[27]
+	Term: w4_Addr_B[28]
+	Term: w4_Addr_B[29]
+	Term: w4_Addr_B[30]
+	Term: w4_Addr_B[31]
+	Term: w7_Addr_A[0]
+	Term: w7_Addr_A[1]
+	Term: w7_Addr_A[2]
+	Term: w7_Addr_A[3]
+	Term: w7_Addr_A[4]
+	Term: w7_Addr_A[5]
+	Term: w7_Addr_A[6]
+	Term: w7_Addr_A[7]
+	Term: w7_Addr_A[8]
+	Term: w7_Addr_A[9]
+	Term: w7_Addr_A[10]
+	Term: w7_Addr_A[11]
+	Term: w7_Addr_A[12]
+	Term: w7_Addr_A[13]
+	Term: w7_Addr_A[14]
+	Term: w7_Addr_A[15]
+	Term: w7_Addr_A[16]
+	Term: w7_Addr_A[17]
+	Term: w7_Addr_A[18]
+	Term: w7_Addr_A[19]
+	Term: w7_Addr_A[20]
+	Term: w7_Addr_A[21]
+	Term: w7_Addr_A[22]
+	Term: w7_Addr_A[23]
+	Term: w7_Addr_A[24]
+	Term: w7_Addr_A[25]
+	Term: w7_Addr_A[26]
+	Term: w7_Addr_A[27]
+	Term: w7_Addr_A[28]
+	Term: w7_Addr_A[29]
+	Term: w7_Addr_A[30]
+	Term: w7_Addr_A[31]
+	Term: w7_Addr_B[0]
+	Term: w7_Addr_B[1]
+	Term: w7_Addr_B[2]
+	Term: w7_Addr_B[3]
+	Term: w7_Addr_B[4]
+	Term: w7_Addr_B[5]
+	Term: w7_Addr_B[6]
+	Term: w7_Addr_B[7]
+	Term: w7_Addr_B[8]
+	Term: w7_Addr_B[9]
+	Term: w7_Addr_B[10]
+	Term: w7_Addr_B[11]
+	Term: w7_Addr_B[12]
+	Term: w7_Addr_B[13]
+	Term: w7_Addr_B[14]
+	Term: w7_Addr_B[15]
+	Term: w7_Addr_B[16]
+	Term: w7_Addr_B[17]
+	Term: w7_Addr_B[18]
+	Term: w7_Addr_B[19]
+	Term: w7_Addr_B[20]
+	Term: w7_Addr_B[21]
+	Term: w7_Addr_B[22]
+	Term: w7_Addr_B[23]
+	Term: w7_Addr_B[24]
+	Term: w7_Addr_B[25]
+	Term: w7_Addr_B[26]
+	Term: w7_Addr_B[27]
+	Term: w7_Addr_B[28]
+	Term: w7_Addr_B[29]
+	Term: w7_Addr_B[30]
+	Term: w7_Addr_B[31]
+	Term: layer8_out_TDATA[0]
+	Term: layer8_out_TDATA[1]
+	Term: layer8_out_TDATA[2]
+	Term: layer8_out_TDATA[3]
+	Term: layer8_out_TDATA[4]
+	Term: layer8_out_TDATA[5]
+	Term: layer8_out_TDATA[6]
+	Term: layer8_out_TDATA[7]
+	Term: layer8_out_TDATA[8]
+	Term: layer8_out_TDATA[9]
+	Term: layer8_out_TDATA[10]
+	Term: layer8_out_TDATA[11]
+	Term: layer8_out_TDATA[12]
+	Term: layer8_out_TDATA[13]
+	Term: layer8_out_TDATA[14]
+	Term: layer8_out_TDATA[15]
+	Term: w2_Din_A[0]
+	Term: w2_Din_A[1]
+	Term: w2_Din_A[2]
+	Term: w2_Din_A[3]
+	Term: w2_Din_A[4]
+	Term: w2_Din_A[5]
+	Term: w2_Din_A[6]
+	Term: w2_Din_A[7]
+	Term: w2_Din_A[8]
+	Term: w2_Din_A[9]
+	Term: w2_Din_A[10]
+	Term: w2_Din_A[11]
+	Term: w2_Din_A[12]
+	Term: w2_Din_A[13]
+	Term: w2_Din_A[14]
+	Term: w2_Din_A[15]
+	Term: w2_Din_B[0]
+	Term: w2_Din_B[1]
+	Term: w2_Din_B[2]
+	Term: w2_Din_B[3]
+	Term: w2_Din_B[4]
+	Term: w2_Din_B[5]
+	Term: w2_Din_B[6]
+	Term: w2_Din_B[7]
+	Term: w2_Din_B[8]
+	Term: w2_Din_B[9]
+	Term: w2_Din_B[10]
+	Term: w2_Din_B[11]
+	Term: w2_Din_B[12]
+	Term: w2_Din_B[13]
+	Term: w2_Din_B[14]
+	Term: w2_Din_B[15]
+	Term: w4_Din_A[0]
+	Term: w4_Din_A[1]
+	Term: w4_Din_A[2]
+	Term: w4_Din_A[3]
+	Term: w4_Din_A[4]
+	Term: w4_Din_A[5]
+	Term: w4_Din_A[6]
+	Term: w4_Din_A[7]
+	Term: w4_Din_A[8]
+	Term: w4_Din_A[9]
+	Term: w4_Din_A[10]
+	Term: w4_Din_A[11]
+	Term: w4_Din_A[12]
+	Term: w4_Din_A[13]
+	Term: w4_Din_A[14]
+	Term: w4_Din_A[15]
+	Term: w4_Din_B[0]
+	Term: w4_Din_B[1]
+	Term: w4_Din_B[2]
+	Term: w4_Din_B[3]
+	Term: w4_Din_B[4]
+	Term: w4_Din_B[5]
+	Term: w4_Din_B[6]
+	Term: w4_Din_B[7]
+	Term: w4_Din_B[8]
+	Term: w4_Din_B[9]
+	Term: w4_Din_B[10]
+	Term: w4_Din_B[11]
+	Term: w4_Din_B[12]
+	Term: w4_Din_B[13]
+	Term: w4_Din_B[14]
+	Term: w4_Din_B[15]
+	Term: w7_Din_A[0]
+	Term: w7_Din_A[1]
+	Term: w7_Din_A[2]
+	Term: w7_Din_A[3]
+	Term: w7_Din_A[4]
+	Term: w7_Din_A[5]
+	Term: w7_Din_A[6]
+	Term: w7_Din_A[7]
+	Term: w7_Din_A[8]
+	Term: w7_Din_A[9]
+	Term: w7_Din_A[10]
+	Term: w7_Din_A[11]
+	Term: w7_Din_A[12]
+	Term: w7_Din_A[13]
+	Term: w7_Din_A[14]
+	Term: w7_Din_A[15]
+	Term: w7_Din_B[0]
+	Term: w7_Din_B[1]
+	Term: w7_Din_B[2]
+	Term: w7_Din_B[3]
+	Term: w7_Din_B[4]
+	Term: w7_Din_B[5]
+	Term: w7_Din_B[6]
+	Term: w7_Din_B[7]
+	Term: w7_Din_B[8]
+	Term: w7_Din_B[9]
+	Term: w7_Din_B[10]
+	Term: w7_Din_B[11]
+	Term: w7_Din_B[12]
+	Term: w7_Din_B[13]
+	Term: w7_Din_B[14]
+	Term: w7_Din_B[15]
+	Term: w2_WEN_A[0]
+	Term: w2_WEN_A[1]
+	Term: w2_WEN_B[0]
+	Term: w2_WEN_B[1]
+	Term: w4_WEN_A[0]
+	Term: w4_WEN_A[1]
+	Term: w4_WEN_B[0]
+	Term: w4_WEN_B[1]
+	Term: w7_WEN_A[0]
+	Term: w7_WEN_A[1]
+	Term: w7_WEN_B[0]
+	Term: w7_WEN_B[1]
+	Term: ap_done
+	Term: ap_idle
+	Term: ap_ready
+	Term: input_1_TREADY
+	Term: layer8_out_TVALID
+	Term: w2_Clk_A
+	Term: w2_Clk_B
+	Term: w2_EN_A
+	Term: w2_EN_B
+	Term: w2_Rst_A
+	Term: w2_Rst_B
+	Term: w4_Clk_A
+	Term: w4_Clk_B
+	Term: w4_EN_A
+	Term: w4_EN_B
+	Term: w4_Rst_A
+	Term: w4_Rst_B
+	Term: w7_Clk_A
+	Term: w7_Clk_B
+	Term: w7_EN_A
+	Term: w7_EN_B
+	Term: w7_Rst_A
+	Term: w7_Rst_B
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 64 |    52 |     0 |                                                                        |                                          |        |        |        |     |
+| 65 |    52 |     0 |                                                                        |                                          |        |        |        |     |
+| 66 |    52 |     0 |                                                                        |                                          |        |        |        |     |
+| 67 |    52 |     0 |                                                                        |                                          |        |        |        |     |
+| 84 |    24 |     0 |                                                                        |                                          |        |        |        |     |
+| 86 |    24 |     0 |                                                                        |                                          |        |        |        |     |
+| 87 |    24 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   280 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 2d62f7b1
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 4392.422 ; gain = 886.930 ; free physical = 2986 ; free virtual = 23587
+Phase 1 Placer Initialization | Checksum: 2d62f7b1
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 4392.422 ; gain = 886.930 ; free physical = 2986 ; free virtual = 23587
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 2d62f7b1
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 4392.422 ; gain = 886.930 ; free physical = 2986 ; free virtual = 23587
+45 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  4 18:03:55 2025...

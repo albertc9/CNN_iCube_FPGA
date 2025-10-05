@@ -1,0 +1,275 @@
+/*
+
+AMD Vivado v2023.2 (64-bit) [Major: 2023, Minor: 2]
+SW Build: 4029153 on Fri Oct 13 20:13:54 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+
+Process ID (PID): 1612928
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sat Oct 04 15:56:46 PDT 2025
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Fedora release 42 (Adams)
+OS Version: 6.16.8-200.fc42.x86_64
+OS Architecture: amd64
+Available processors (cores): 32
+LSB Release Description: Fedora release 42 (Adams)
+
+Display: 0
+Screen size: 3424x1926
+Local screen bounds: x = 0, y = 0, width = 3424, height = 1830
+Screen resolution (DPI): 200
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=24
+Scale size: 48
+OS font scaling: 200%
+Anti-Alias Enabled: false
+
+Java version: 	17.0.7 64-bit
+JavaFX version: 17.0.1
+Java home: 	/home/work1/Apps/Vivado/2023.2/tps/lnx64/jre17.0.7_7
+Java executable: 	/home/work1/Apps/Vivado/2023.2/tps/lnx64/jre17.0.7_7/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	work1
+User home directory: /home/work1
+User working directory: /home/work1/Work/CNN_iCube_FPGA
+User country: 	US
+User language: 	en
+User locale: 	zh_CN
+
+RDI_BASEROOT: /home/work1/Apps/Vivado
+HDI_APPROOT: /home/work1/Apps/Vivado/2023.2
+RDI_DATADIR: /home/work1/Apps/Vivado/2023.2/data
+RDI_BINDIR: /home/work1/Apps/Vivado/2023.2/bin
+
+Vivado preferences file: /home/work1/.Xilinx/Vivado/2023.2/vivado.xml
+Vivado preferences directory: /home/work1/.Xilinx/Vivado/2023.2/
+Vivado layouts directory: /home/work1/.Xilinx/Vivado/2023.2/data/layouts
+PlanAhead jar file: 	/home/work1/Apps/Vivado/2023.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/work1/Work/CNN_iCube_FPGA/vivado.log
+Vivado journal file: 	/home/work1/Work/CNN_iCube_FPGA/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-1612928-dhcp-172-31-232-100.mobile.uci.edu
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: /home/work1/Apps/Vivado/2023.2
+RDI_BASEROOT: /home/work1/Apps/Vivado
+RDI_BINROOT: /home/work1/Apps/Vivado/2023.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /home/work1/Apps/Vivado/2023.2/data
+RDI_INSTALLROOT: /home/work1/Apps
+RDI_INSTALLVER: 2023.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 17.0.7_7
+RDI_LIBDIR: /home/work1/Apps/Vivado/2023.2/lib/lnx64.o/Default:/home/work1/Apps/Vivado/2023.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /home/work1/Apps/Vivado/2023.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /home/work1/Apps/Vivado/2023.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/work1/Work/CNN_iCube_FPGA:dhcp-172-31-232-100.mobile.uci.edu_1759618593_1612889
+RDI_SHARED_DATA: /home/work1/Apps/SharedData/2023.2/data
+RDI_TPS_ROOT: /home/work1/Apps/Vivado/2023.2/tps/lnx64
+RDI_USE_JDK17: True
+SHELL: /usr/bin/zsh
+XILINX: /home/work1/Apps/Vivado/2023.2/ids_lite/ISE
+XILINX_DSP: /home/work1/Apps/Vivado/2023.2/ids_lite/ISE
+XILINX_HLS: /home/work1/Apps/Vitis_HLS/2023.2
+XILINX_PLANAHEAD: /home/work1/Apps/Vivado/2023.2
+XILINX_VIVADO: /home/work1/Apps/Vivado/2023.2
+XILINX_VIVADO_HLS: /home/work1/Apps/Vivado/2023.2
+
+
+GUI allocated memory:	780 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,799 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,855 MB. GUI used memory: 92 MB. Current time: 10/4/25, 3:56:47 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,566 MB. GUI used memory: 89 MB. Current time: 10/4/25, 4:26:47 PM PDT
+// [GUI Memory]: 98 MB (+99917kb) [00:32:52]
+// [Engine Memory]: 1,566 MB (+1490823kb) [00:32:52]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,566 MB. GUI used memory: 90 MB. Current time: 10/4/25, 4:56:47 PM PDT
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // u (PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+// Elapsed time: 13 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "CNN_iCube_FPGA"); // Q (PAResourceOtoP.ProjectNameChooser_PROJECT_NAME)
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+// [GUI Memory]: 158 MB (+57921kb) [01:17:31]
+// [GUI Memory]: 166 MB (+89kb) [01:17:31]
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+// Elapsed time: 19 seconds
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD)
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "xcku5p"); // OverlayTextField (PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD)
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "xcku5p-ffvb676"); // OverlayTextField (PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD)
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "xcku5p-ffvb676-2-e"); // OverlayTextField (PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xcku5p-ffvb676-2-e ; 676 ; 280 ; 216960 ; 433920 ; 480 ; 64 ; 1824 ; 10552 ; 16 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 16 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 4 ;  ; 1 ;  ;  ; 0 ;  ;  ; 0 ; 100 ; 100 ; E ; 0.825 ; 0.850 ; 0.876", 0, "xcku5p-ffvb676-2-e", 0); // c (PAResourceEtoH.FPGAChooser_FPGA_TABLE)
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,683 MB (+39907kb) [01:18:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  1441 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project CNN_iCube_FPGA /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA -part xcku5p-ffvb676-2-e 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/work1/Apps/Vivado/2023.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'g' command handler elapsed time: 66 seconds
+dismissDialog("Create Project"); // bq (Create Project Progress)
+dismissDialog("New Project"); // f (dialog0)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+// Elapsed time: 10 seconds
+String[] filenames31467 = {"/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_s.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_s.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_s.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_fifo_w160_d238_A.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_fifo_w16_d1_S.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_fifo_w320_d247_A.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_flow_control_loop_pipe.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_flow_control_loop_pipe_sequential_init.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_hls_deadlock_detection_unit.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_hls_deadlock_detector.vh", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_hls_deadlock_idx0_monitor.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_hls_deadlock_kernel_monitor_top.vh", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_hls_deadlock_report_unit.vh", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_mul_16s_16s_26_1_1.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_regslice_both.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_s.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_s.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_void_conv_2d_buffer_bkb.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s_sigmoid_table_ROeOg.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_start_for_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0.v", "/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0.v"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 19 seconds
+dismissDialog("Add Sources"); // c (dialog1)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse -scan_for_includes {/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_hls_deadlock_kernel_monitor_top.vh /home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_hls_deadlock_detector.vh /home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_hls_deadlock_report_unit.vh} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse {/home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_hls_deadlock_kernel_monitor_top.vh /home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_hls_deadlock_detector.vh /home/work1/Work/CNN_iCube_FPGA/export/hdl/verilog/myproject_hls_deadlock_report_unit.vh} 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // bq (Add Sources  Progress)
+// Elapsed Time for: 'L.f': 28s
+// [GUI Memory]: 205 MB (+32144kb) [01:18:44]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 30s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 32s
+// [Engine Memory]: 1,773 MB (+6349kb) [01:18:48]
+// Elapsed Time for: 'L.f': 34s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// Elapsed Time for: 'L.f': 36s
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES)
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+// Elapsed Time for: 'L.f': 38s
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES)
+setFileChooser("/home/work1/Work/CNN_iCube_FPGA/export/constraints/myproject_ooc.xdc");
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c (dialog3)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse /home/work1/Work/CNN_iCube_FPGA/export/constraints/myproject_ooc.xdc 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset constrs_1 /home/work1/Work/CNN_iCube_FPGA/export/constraints/myproject_ooc.xdc 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, myproject_ooc.xdc]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, myproject_ooc.xdc]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, myproject_ooc.xdc]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Launch External Editor: 'code -g /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/constrs_1/imports/constraints/myproject_ooc.xdc:0'
+// Elapsed time: 29 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myproject (myproject.v)]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myproject (myproject.v)]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myproject (myproject.v)]", 3, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myproject (myproject.v)]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R (PAResourceOtoP.PAViews_SOURCES, Sources)
+// Elapsed time: 39 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myproject (myproject.v)]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // f (dialog5)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 30 
+// Tcl Message: [Sat Oct  4 17:17:21 2025] Launched synth_1... Run output will be captured here: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 11 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R (PAResourceOtoP.PAViews_SOURCES, Sources)
+// Elapsed time: 398 seconds
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // g (RDIResource.PropertiesView_TABBED_PANE)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // g (RDIResource.PropertiesView_TABBED_PANE)
+// Elapsed time: 29 seconds
+selectLabel((HResource) null, "Dashboard"); // b (Dashboard)
+selectTab(PAResourceOtoP.ProjectDashboardView_TABBED_PANE, (HResource) null, "Overview", 0); // u (PAResourceOtoP.ProjectDashboardView_TABBED_PANE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,859 MB. GUI used memory: 99 MB. Current time: 10/4/25, 5:26:48 PM PDT
+// Elapsed time: 202 seconds
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aa
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aa
+// Elapsed time: 125 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 2); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [Engine Memory]: 1,862 MB (+411kb) [01:48:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,885 MB. GUI used memory: 102 MB. Current time: 10/4/25, 5:56:48 PM PDT
+// Elapsed time: 1977 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // f (dialog7)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 30 
+// Tcl Message: [Sat Oct  4 18:03:26 2025] Launched impl_1... Run output will be captured here: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/impl_1/runme.log 
+// 'a' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,889 MB. GUI used memory: 100 MB. Current time: 10/4/25, 6:26:48 PM PDT
+// Elapsed time: 2317 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // Q.a (dialog8)
+maximizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // R (PAResourceOtoP.PAViews_MESSAGES, Messages)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,330 MB. GUI used memory: 99 MB. Current time: 10/4/25, 6:42:08 PM PDT
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 8, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+typeControlKey(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 'a'); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+// [Engine Memory]: 2,097 MB (+149366kb) [02:47:10]
+// Elapsed time: 207 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 9, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
