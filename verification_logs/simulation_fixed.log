@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Oct  5 15:58:25 2025
+# Process ID: 2305408
+# Current directory: /home/work1/Work/CNN_iCube_FPGA
+# Command line: vivado -mode batch -source scripts/run_vivado_simulation.tcl -log verification_logs/simulation_fixed.log -journal verification_logs/simulation_fixed.jou
+# Log file: /home/work1/Work/CNN_iCube_FPGA/verification_logs/simulation_fixed.log
+# Journal file: /home/work1/Work/CNN_iCube_FPGA/verification_logs/simulation_fixed.jou
+# Running On: dhcp-172-31-232-100.mobile.uci.edu, OS: Linux, CPU Frequency: 800.849 MHz, CPU Physical cores: 24, Host memory: 16427 MB
+#-----------------------------------------------------------
+WARNING: [Runs 36-547] User Strategy 'Vivado Implementation Defaults' from file '/home/work1/.Xilinx/Vivado/2023.2/strategies/Vivado Implementation Defaults.Vivado Implementation 2020.psg' discarded because strategy with same name already parsed from '/home/work1/Apps/Vivado/2023.2/strategies/VDI2020.psg'
+WARNING: [Runs 36-547] User Strategy 'Vivado Synthesis Defaults' from file '/home/work1/.Xilinx/Vivado/2023.2/strategies/Vivado Synthesis Defaults.Vivado Synthesis 2020.psg' discarded because strategy with same name already parsed from '/home/work1/Apps/Vivado/2023.2/strategies/VDS2020.psg'
+source scripts/run_vivado_simulation.tcl
+# set project_name "CNN_iCube_FPGA"
+# set project_dir [file normalize .]
+# puts "Opening Vivado project: $project_name"
+Opening Vivado project: CNN_iCube_FPGA
+# puts "Project path: $project_dir/$project_name.xpr"
+Project path: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA.xpr
+# open_project $project_dir/$project_name.xpr
+ERROR: [Coretcl 2-1982] Project file does not exist. Please provide a project file with .xpr extension. Provided: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA.xpr
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  5 15:58:27 2025...

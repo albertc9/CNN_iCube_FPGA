@@ -3,13 +3,13 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sat Oct  4 22:21:06 2025
-# Process ID: 1759960
+# Start of session at: Sun Oct  5 15:28:41 2025
+# Process ID: 2195995
 # Current directory: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/synth_1
 # Command line: vivado -log myproject.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source myproject.tcl
 # Log file: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/synth_1/myproject.vds
 # Journal file: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/synth_1/vivado.jou
-# Running On: dhcp-172-31-232-100.mobile.uci.edu, OS: Linux, CPU Frequency: 4155.885 MHz, CPU Physical cores: 24, Host memory: 16427 MB
+# Running On: dhcp-172-31-232-100.mobile.uci.edu, OS: Linux, CPU Frequency: 1649.494 MHz, CPU Physical cores: 24, Host memory: 16427 MB
 #-----------------------------------------------------------
 WARNING: [Runs 36-547] User Strategy 'Vivado Implementation Defaults' from file '/home/work1/.Xilinx/Vivado/2023.2/strategies/Vivado Implementation Defaults.Vivado Implementation 2020.psg' discarded because strategy with same name already parsed from '/home/work1/Apps/Vivado/2023.2/strategies/VDI2020.psg'
 WARNING: [Runs 36-547] User Strategy 'Vivado Synthesis Defaults' from file '/home/work1/.Xilinx/Vivado/2023.2/strategies/Vivado Synthesis Defaults.Vivado Synthesis 2020.psg' discarded because strategy with same name already parsed from '/home/work1/Apps/Vivado/2023.2/strategies/VDS2020.psg'
@@ -20,9 +20,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1760015
+INFO: [Synth 8-7075] Helper process launched with PID 2196054
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1929.961 ; gain = 385.691 ; free physical = 231 ; free virtual = 26233
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1929.961 ; gain = 416.566 ; free physical = 292 ; free virtual = 26908
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'myproject' [/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject.v:9]
 INFO: [Synth 8-6157] synthesizing module 'myproject_CTRL_s_axi' [/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_CTRL_s_axi.v:9]
@@ -262,19 +262,19 @@ WARNING: [Synth 8-7129] Port layer5_out_dout[73] in module myproject_dense_array
 WARNING: [Synth 8-7129] Port layer5_out_dout[72] in module myproject_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2028.930 ; gain = 484.660 ; free physical = 252 ; free virtual = 26085
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2028.930 ; gain = 515.535 ; free physical = 294 ; free virtual = 26827
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2046.742 ; gain = 502.473 ; free physical = 250 ; free virtual = 26082
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2046.742 ; gain = 533.348 ; free physical = 272 ; free virtual = 26804
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xcku5p-ffvb676-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
----------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-e
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2054.746 ; gain = 510.477 ; free physical = 250 ; free virtual = 26082
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2063.652 ; gain = 550.258 ; free physical = 271 ; free virtual = 26804
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'myproject_CTRL_s_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'myproject_CTRL_s_axi'
@@ -302,7 +302,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'myproject_CTRL_s_axi'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2070.762 ; gain = 526.492 ; free physical = 204 ; free virtual = 26050
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2063.652 ; gain = 550.258 ; free physical = 205 ; free virtual = 26758
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -385,7 +385,7 @@ RAM ("myproject_fifo_w160_d238_A:/U_myproject_fifo_w160_d238_A_ram/mem_reg") is 
 WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module myproject_CTRL_s_axi.
 WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module myproject_CTRL_s_axi.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2854.629 ; gain = 1310.359 ; free physical = 157 ; free virtual = 25248
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2854.309 ; gain = 1340.914 ; free physical = 209 ; free virtual = 25954
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -407,14 +407,14 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2854.629 ; gain = 1310.359 ; free physical = 157 ; free virtual = 25248
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2854.309 ; gain = 1340.914 ; free physical = 203 ; free virtual = 25953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0/sigmoid_table_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2854.629 ; gain = 1310.359 ; free physical = 162 ; free virtual = 25254
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2854.309 ; gain = 1340.914 ; free physical = 203 ; free virtual = 25953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -432,37 +432,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2854.629 ; gain = 1310.359 ; free physical = 180 ; free virtual = 25245
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2854.309 ; gain = 1340.914 ; free physical = 192 ; free virtual = 25935
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2854.629 ; gain = 1310.359 ; free physical = 180 ; free virtual = 25245
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2854.309 ; gain = 1340.914 ; free physical = 192 ; free virtual = 25935
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2854.629 ; gain = 1310.359 ; free physical = 180 ; free virtual = 25245
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2854.309 ; gain = 1340.914 ; free physical = 192 ; free virtual = 25935
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2854.629 ; gain = 1310.359 ; free physical = 180 ; free virtual = 25245
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2854.309 ; gain = 1340.914 ; free physical = 192 ; free virtual = 25935
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2854.629 ; gain = 1310.359 ; free physical = 180 ; free virtual = 25245
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2854.309 ; gain = 1340.914 ; free physical = 192 ; free virtual = 25935
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2854.629 ; gain = 1310.359 ; free physical = 180 ; free virtual = 25245
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2854.309 ; gain = 1340.914 ; free physical = 192 ; free virtual = 25935
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -527,18 +527,18 @@ Report Instance Areas:
 |28    |  start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_U                |myproject_start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0          |    13|
 +------+-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2854.629 ; gain = 1310.359 ; free physical = 180 ; free virtual = 25245
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2854.309 ; gain = 1340.914 ; free physical = 192 ; free virtual = 25935
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 781 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2854.629 ; gain = 1310.359 ; free physical = 180 ; free virtual = 25245
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2854.637 ; gain = 1310.359 ; free physical = 181 ; free virtual = 25245
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2854.309 ; gain = 1340.914 ; free physical = 192 ; free virtual = 25935
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2854.316 ; gain = 1340.914 ; free physical = 192 ; free virtual = 25935
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2854.637 ; gain = 0.000 ; free physical = 463 ; free virtual = 25530
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2854.316 ; gain = 0.000 ; free physical = 453 ; free virtual = 26197
 INFO: [Netlist 29-17] Analyzing 72 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2913.625 ; gain = 0.000 ; free physical = 441 ; free virtual = 25519
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2913.305 ; gain = 0.000 ; free physical = 432 ; free virtual = 26181
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 22 instances were transformed.
   BUFG => BUFGCE: 1 instance 
@@ -548,10 +548,10 @@ Synth Design complete | Checksum: a669840e
 INFO: [Common 17-83] Releasing license: Synthesis
 91 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 2913.660 ; gain = 1369.391 ; free physical = 440 ; free virtual = 25518
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2440.143; main = 2159.777; forked = 423.699
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4522.633; main = 2913.629; forked = 1668.000
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2937.637 ; gain = 0.000 ; free physical = 440 ; free virtual = 25518
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 2913.340 ; gain = 1403.914 ; free physical = 431 ; free virtual = 26179
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2285.689; main = 1968.013; forked = 383.256
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4498.203; main = 2913.309; forked = 1643.891
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2937.316 ; gain = 0.000 ; free physical = 431 ; free virtual = 26180
 INFO: [Common 17-1381] The checkpoint '/home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/synth_1/myproject.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file myproject_utilization_synth.rpt -pb myproject_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Oct  4 22:21:28 2025...
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  5 15:29:04 2025...

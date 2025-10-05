@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sat Oct  4 22:21:06 2025
-# Process ID: 1759960
+# Start of session at: Sun Oct  5 15:28:41 2025
+# Process ID: 2195995
 # Current directory: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/synth_1
 # Command line: vivado -log myproject.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source myproject.tcl
 # Log file: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/synth_1/myproject.vds
 # Journal file: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/synth_1/vivado.jou
-# Running On: dhcp-172-31-232-100.mobile.uci.edu, OS: Linux, CPU Frequency: 4155.885 MHz, CPU Physical cores: 24, Host memory: 16427 MB
+# Running On: dhcp-172-31-232-100.mobile.uci.edu, OS: Linux, CPU Frequency: 1649.494 MHz, CPU Physical cores: 24, Host memory: 16427 MB
 #-----------------------------------------------------------
 source myproject.tcl -notrace

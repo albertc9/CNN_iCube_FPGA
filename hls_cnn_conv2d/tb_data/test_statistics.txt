@@ -1,0 +1,18 @@
+# Test Vector Statistics
+Total test vectors: 1000
+Input data range: [-0.500000, 0.500000]
+Input data mean: -0.000019
+Input data std: 0.040084
+Output range: [0.000000, 0.999922]
+Output mean: 0.189780
+Output std: 0.339224
+
+Vector type distribution:
+  reference: 1
+  zeros: 1
+  noise: 20
+  scaled: 7
+  random: 859
+  saturation: 2
+  impulse: 10
+  variation: 100

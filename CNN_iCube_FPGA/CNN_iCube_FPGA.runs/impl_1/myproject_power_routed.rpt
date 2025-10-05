@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date             : Sat Oct  4 22:24:11 2025
+| Date             : Sun Oct  5 15:30:44 2025
 | Host             : dhcp-172-31-232-100.mobile.uci.edu running 64-bit unknown
 | Command          : report_power -file myproject_power_routed.rpt -pb myproject_power_summary_routed.pb -rpx myproject_power_routed.rpx
 | Design           : myproject

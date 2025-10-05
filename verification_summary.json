@@ -1,0 +1,41 @@
+{
+  "analysis_timestamp": "2025-10-05T15:59:00Z",
+  "project": "CNN_iCube_FPGA",
+  "target_device": "xcku5p-ffvb676-2-e",
+  "target_frequency_mhz": 200,
+  "synthesis": {
+    "luts_used": 468,
+    "luts_available": 216960,
+    "luts_utilization": 0.22,
+    "regs_used": 449,
+    "regs_available": 433920,
+    "regs_utilization": 0.1
+  },
+  "implementation": {
+    "unconstrained_cells": 451,
+    "total_power": 6.875,
+    "dynamic_power": 6.364,
+    "static_power": 0.511,
+    "junction_temp": 36.9
+  },
+  "test_infrastructure": {
+    "total_vectors": 1000,
+    "input_min": -0.5,
+    "input_max": 0.5,
+    "output_min": 0.0,
+    "output_max": 0.999922
+  },
+  "performance": {
+    "hls_synthesis": "completed",
+    "estimated_latency_cycles": 4420,
+    "estimated_latency_us_200mhz": 22.1,
+    "estimated_throughput_fps": 45248.86877828054
+  },
+  "verification_status": {
+    "test_vectors": "complete",
+    "testbench": "complete",
+    "timing_constraints": "complete",
+    "simulation": "ready",
+    "power_analysis": "ready"
+  }
+}

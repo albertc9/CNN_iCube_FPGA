@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1759641664">
-  <File Type="VDS-TIMINGSUMMARY" Name="myproject_timing_summary_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1759703319">
   <File Type="RDS-DCP" Name="myproject.dcp"/>
   <File Type="RDS-UTIL-PB" Name="myproject_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="myproject_utilization_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="myproject_timing_summary_synth.pb"/>
   <File Type="PA-TCL" Name="myproject.tcl"/>
+  <File Type="RDS-UTIL" Name="myproject_utilization_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="myproject_reports.tcl"/>
   <File Type="RDS-RDS" Name="myproject.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="myproject_drc_synth.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_CTRL_s_axi.v">
@@ -219,9 +216,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

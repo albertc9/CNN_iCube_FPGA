@@ -1,0 +1,225 @@
+/*
+
+AMD Vivado v2023.2 (64-bit) [Major: 2023, Minor: 2]
+SW Build: 4029153 on Fri Oct 13 20:13:54 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+
+Process ID (PID): 2195631
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun Oct 05 15:28:27 PDT 2025
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Fedora release 42 (Adams)
+OS Version: 6.16.8-200.fc42.x86_64
+OS Architecture: amd64
+Available processors (cores): 32
+LSB Release Description: Fedora release 42 (Adams)
+
+Display: 0
+Screen size: 3424x1926
+Local screen bounds: x = 0, y = 0, width = 3424, height = 1830
+Screen resolution (DPI): 200
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=24
+Scale size: 48
+OS font scaling: 200%
+Anti-Alias Enabled: false
+
+Java version: 	17.0.7 64-bit
+JavaFX version: 17.0.1
+Java home: 	/home/work1/Apps/Vivado/2023.2/tps/lnx64/jre17.0.7_7
+Java executable: 	/home/work1/Apps/Vivado/2023.2/tps/lnx64/jre17.0.7_7/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	work1
+User home directory: /home/work1
+User working directory: /home/work1/Work/CNN_iCube_FPGA
+User country: 	US
+User language: 	en
+User locale: 	zh_CN
+
+RDI_BASEROOT: /home/work1/Apps/Vivado
+HDI_APPROOT: /home/work1/Apps/Vivado/2023.2
+RDI_DATADIR: /home/work1/Apps/Vivado/2023.2/data
+RDI_BINDIR: /home/work1/Apps/Vivado/2023.2/bin
+
+Vivado preferences file: /home/work1/.Xilinx/Vivado/2023.2/vivado.xml
+Vivado preferences directory: /home/work1/.Xilinx/Vivado/2023.2/
+Vivado layouts directory: /home/work1/.Xilinx/Vivado/2023.2/data/layouts
+PlanAhead jar file: 	/home/work1/Apps/Vivado/2023.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/work1/Work/CNN_iCube_FPGA/vivado.log
+Vivado journal file: 	/home/work1/Work/CNN_iCube_FPGA/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-2195631-dhcp-172-31-232-100.mobile.uci.edu
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: /home/work1/Apps/Vivado/2023.2
+RDI_BASEROOT: /home/work1/Apps/Vivado
+RDI_BINROOT: /home/work1/Apps/Vivado/2023.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /home/work1/Apps/Vivado/2023.2/data
+RDI_INSTALLROOT: /home/work1/Apps
+RDI_INSTALLVER: 2023.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 17.0.7_7
+RDI_LIBDIR: /home/work1/Apps/Vivado/2023.2/lib/lnx64.o/Default:/home/work1/Apps/Vivado/2023.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /home/work1/Apps/Vivado/2023.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /home/work1/Apps/Vivado/2023.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/work1/Work/CNN_iCube_FPGA:dhcp-172-31-232-100.mobile.uci.edu_1759703295_2195587
+RDI_SHARED_DATA: /home/work1/Apps/SharedData/2023.2/data
+RDI_TPS_ROOT: /home/work1/Apps/Vivado/2023.2/tps/lnx64
+RDI_USE_JDK17: True
+SHELL: /usr/bin/zsh
+XILINX: /home/work1/Apps/Vivado/2023.2/ids_lite/ISE
+XILINX_DSP: /home/work1/Apps/Vivado/2023.2/ids_lite/ISE
+XILINX_HLS: /home/work1/Apps/Vitis_HLS/2023.2
+XILINX_PLANAHEAD: /home/work1/Apps/Vivado/2023.2
+XILINX_VIVADO: /home/work1/Apps/Vivado/2023.2
+XILINX_VIVADO_HLS: /home/work1/Apps/Vivado/2023.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,548 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,574 MB. GUI used memory: 91 MB. Current time: 10/5/25, 3:28:28 PM PDT
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.xpr", 0); // b.c (PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS)
+// [GUI Memory]: 98 MB (+100579kb) [00:00:10]
+// [Engine Memory]: 1,574 MB (+1499232kb) [00:00:10]
+// Opening Vivado Project: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.xpr. Version: Vivado v2023.2 
+// Tcl Message: open_project /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 149 MB (+48290kb) [00:00:11]
+// [Engine Memory]: 1,734 MB (+85415kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  1672 ms.
+// Tcl Message: open_project /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/work1/Apps/Vivado/2023.2/data/ip'. 
+// [GUI Memory]: 172 MB (+15502kb) [00:00:12]
+// Project name: CNN_iCube_FPGA; location: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA; part: xcku5p-ffvb676-2-e
+dismissDialog("Open Project"); // bq (Open Project Progress)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 18, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (RDIResource.BaseDialog_YES)
+dismissDialog("Synthesis is Out-of-date"); // u (dialog0)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // f (dialog1)
+// TclEventType: RUN_LAUNCH
+// [GUI Memory]: 182 MB (+1795kb) [00:00:21]
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 195 MB (+4736kb) [00:00:21]
+// Tcl Message: launch_runs impl_1 -jobs 30 
+// Tcl Message: [Sun Oct  5 15:28:40 2025] Launched synth_1... Run output will be captured here: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/synth_1/runme.log [Sun Oct  5 15:28:40 2025] Launched impl_1... Run output will be captured here: /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 697 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,862 MB. GUI used memory: 101 MB. Current time: 10/5/25, 3:40:23 PM PDT
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 3,057 MB (+1295404kb) [00:12:07]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,077 MB. GUI used memory: 101 MB. Current time: 10/5/25, 3:40:26 PM PDT
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /home/work1/Apps/Vivado/2023.2/data/parts/xilinx/kintexuplus/devint/kintexuplus/xcku5p/xcku5p.xgd; ZipEntry: xcku5p_detail.xgd elapsed time: 1s
+// [GUI Memory]: 206 MB (+687kb) [00:12:08]
+// [Engine Memory]: 3,252 MB (+45094kb) [00:12:08]
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.1s
+// [GUI Memory]: 248 MB (+33607kb) [00:12:09]
+// [Engine Memory]: 3,492 MB (+80889kb) [00:12:09]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1797 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-e 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9028.719 ; gain = 0.000 ; free physical = 1323 ; free virtual = 26400 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2023.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9028.719 ; gain = 0.000 ; free physical = 1298 ; free virtual = 26391 
+// Tcl Message: INFO: [Designutils 20-5722] Start Reading Physical Databases. 
+// Tcl Message: Reading placement. 
+// Tcl Message: Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9028.719 ; gain = 0.000 ; free physical = 1298 ; free virtual = 26391 
+// Tcl Message: Reading placer database... 
+// Tcl Message: Read Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9028.719 ; gain = 0.000 ; free physical = 1290 ; free virtual = 26383 Read PlaceDB: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9028.719 ; gain = 0.000 ; free physical = 1282 ; free virtual = 26375 Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9028.719 ; gain = 0.000 ; free physical = 1282 ; free virtual = 26375 
+// Tcl Message: Reading routing. 
+// Tcl Message: Read RouteStorage: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9028.719 ; gain = 0.000 ; free physical = 1282 ; free virtual = 26375 Read Physdb Files: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 9028.719 ; gain = 0.000 ; free physical = 1282 ; free virtual = 26375 
+// Tcl Message: Restored from archive | CPU: 0.060000 secs | Memory: 1.161598 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 9028.719 ; gain = 0.000 ; free physical = 1282 ; free virtual = 26375 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9353.477 ; gain = 0.000 ; free physical = 973 ; free virtual = 26087 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 21 instances were transformed.   IBUF => IBUF (IBUFCTRL, INBUF): 21 instances  
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// Tcl Message: open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 9684.176 ; gain = 1606.918 ; free physical = 406 ; free virtual = 25552 
+// TclEventType: DRC_ADDED
+// [GUI Memory]: 262 MB (+786kb) [00:12:10]
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.4s
+// RouteApi::initDelayMediator elapsed time: 1.5s
+// [Engine Memory]: 3,685 MB (+19157kb) [00:12:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  3158 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dB' command handler elapsed time: 15 seconds
+// [GUI Memory]: 280 MB (+6089kb) [00:12:14]
+dismissDialog("Open Implemented Design"); // bq (Open Implemented Design Progress)
