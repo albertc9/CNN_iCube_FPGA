@@ -5,43 +5,23 @@
 
 void myproject(
     hls::stream<input_t> &input_1,
-    hls::stream<result_t> &layer8_out
+    hls::stream<result_t> &layer8_out,
+    conv2d_0_weight_t w2[800], 
+    conv2d_0_bias_t b2[20], 
+    conv2d_1_1_weight_t w4[2000], 
+    conv2d_1_1_bias_t b4[10], 
+    dense_4_weight_t w7[2380]
 ) {
 
-    // ****************************************
-    // WEIGHT ARRAYS - INTERNAL STORAGE
-    // ****************************************
-    // Define weight arrays as internal static storage
-    static conv2d_0_weight_t w2[800];
-    static conv2d_0_bias_t b2[20];
-    static conv2d_1_1_weight_t w4[2000];
-    static conv2d_1_1_bias_t b4[10];
-    static dense_4_weight_t w7[2380];
-    static dense_4_bias_t b7[1];
-
-    // ****************************************
-    // HLS INTERFACE PRAGMAS
-    // ****************************************
-    #pragma HLS INTERFACE axis port=input_1,layer8_out
-    #pragma HLS INTERFACE s_axilite port=return bundle=CTRL
-
-    // Force weights to internal ROM/BRAM (not external ports)
-    #pragma HLS BIND_STORAGE variable=w2 type=rom_1p impl=bram
-    #pragma HLS BIND_STORAGE variable=b2 type=rom_1p impl=bram
-    #pragma HLS BIND_STORAGE variable=w4 type=rom_1p impl=bram
-    #pragma HLS BIND_STORAGE variable=b4 type=rom_1p impl=bram
-    #pragma HLS BIND_STORAGE variable=w7 type=rom_1p impl=bram
-    #pragma HLS BIND_STORAGE variable=b7 type=rom_1p impl=bram
-
+    // hls-fpga-machine-learning insert IO
+    #pragma HLS INTERFACE axis port=input_1,layer8_out 
+    #pragma HLS INTERFACE bram port=w2,b2,w4,b4,w7 
     #pragma HLS DATAFLOW 
 
-    // ****************************************
-    // WEIGHT INITIALIZATION
-    // ****************************************
 #ifndef __SYNTHESIS__
     static bool loaded_weights = false;
     if (!loaded_weights) {
-        // Load weights from txt files for C simulation
+        // hls-fpga-machine-learning insert load weights
         nnet::load_weights_from_txt<conv2d_0_weight_t, 800>(w2, "w2.txt");
         nnet::load_weights_from_txt<conv2d_0_bias_t, 20>(b2, "b2.txt");
         nnet::load_weights_from_txt<conv2d_1_1_weight_t, 2000>(w4, "w4.txt");
@@ -50,9 +30,6 @@ void myproject(
         nnet::load_weights_from_txt<dense_4_bias_t, 1>(b7, "b7.txt");
         loaded_weights = true;
     }
-#else
-    // For synthesis, weights are directly initialized by BIND_STORAGE pragma
-    // No explicit initialization needed - HLS will use internal ROM/BRAM
 #endif
 
     // ****************************************

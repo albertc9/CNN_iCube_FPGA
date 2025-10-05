@@ -16,7 +16,6 @@
 #include "firmware/weights/w4.h"
 #include "firmware/weights/b4.h"
 #include "firmware/weights/w7.h"
-#include "firmware/weights/b7.h"
 
 #define CHECKPOINT 5000
 
@@ -69,7 +68,7 @@ int main(int argc, char **argv) {
       hls::stream<result_t> layer8_out("layer8_out");
 
             // hls-fpga-machine-learning insert top-level-function
-            myproject(input_1,layer8_out);
+            myproject(input_1,layer8_out,w2,b2,w4,b4,w7);
 
             if (e % CHECKPOINT == 0) {
                 std::cout << "Predictions" << std::endl;
@@ -98,7 +97,7 @@ int main(int argc, char **argv) {
     hls::stream<result_t> layer8_out("layer8_out");
 
         // hls-fpga-machine-learning insert top-level-function
-        myproject(input_1,layer8_out);
+        myproject(input_1,layer8_out,w2,b2,w4,b4,w7);
 
         // hls-fpga-machine-learning insert output
         nnet::print_result<result_t, N_LAYER_7>(layer8_out, std::cout, true);
