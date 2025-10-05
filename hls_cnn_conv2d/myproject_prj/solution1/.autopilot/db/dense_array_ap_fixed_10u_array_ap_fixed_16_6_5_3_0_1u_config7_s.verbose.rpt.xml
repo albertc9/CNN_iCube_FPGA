@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_s'" level="0">
-<item name = "Date">Sat Oct  4 16:26:17 2025
+<item name = "Date">Sat Oct  4 21:50:15 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.304 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 1.838 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,19 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1436, 1436, 7.180 us, 7.180 us, 1436, 1436, no</column>
+<column name="">247, 247, 1.235 us, 1.235 us, 247, 247, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555">dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare, 240, 240, 1.200 us, 1.200 us, 240, 240, no</column>
-<column name="grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941">dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s, 1192, 1192, 5.960 us, 5.960 us, 1192, 1192, no</column>
+<column name="grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59">dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare, 240, 240, 1.200 us, 1.200 us, 240, 240, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- ReuseLoop">3, 3, 1, 1, 1, 4, yes</column>
 </table>
 </item>
 </section>
@@ -49,22 +49,21 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 2, -</column>
+<column name="Expression">-, -, 0, 20, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 2380, 60668, 60624, -</column>
+<column name="Instance">-, -, 11, 79, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 67, -</column>
-<column name="Register">-, -, 25, -, -</column>
+<column name="Multiplexer">-, -, -, 76, -</column>
+<column name="Register">-, -, 10, -, -</column>
 <specialColumn name="Available">960, 1824, 433920, 216960, 64</specialColumn>
-<specialColumn name="Utilization (%)">0, 130, 13, 27, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555">dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare, 0, 0, 38099, 79, 0</column>
-<column name="grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941">dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s, 0, 2380, 22569, 60545, 0</column>
+<column name="grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59">dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare, 0, 0, 11, 79, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -81,6 +80,8 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="in_index_fu_65_p2">+, 0, 0, 9, 2, 1</column>
+<column name="icmp_ln42_fu_71_p2">icmp, 0, 0, 9, 2, 2</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
@@ -88,6 +89,7 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">31, 6, 1, 6</column>
 <column name="ap_done">9, 2, 1, 2</column>
+<column name="in_index1_reg_48">9, 2, 2, 4</column>
 <column name="layer5_out_read">9, 2, 1, 2</column>
 <column name="layer7_out_blk_n">9, 2, 1, 2</column>
 <column name="real_start">9, 2, 1, 2</column>
@@ -97,9 +99,8 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">5, 0, 5, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941_ap_start_reg">1, 0, 1, 0</column>
-<column name="res_reg_45267">16, 0, 16, 0</column>
+<column name="grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59_ap_start_reg">1, 0, 1, 0</column>
+<column name="in_index1_reg_48">2, 0, 2, 0</column>
 <column name="start_once_reg">1, 0, 1, 0</column>
 </table>
 </item>
@@ -130,16 +131,6 @@
 <column name="layer7_out_fifo_cap">in, 2, ap_fifo, layer7_out, pointer</column>
 <column name="layer7_out_full_n">in, 1, ap_fifo, layer7_out, pointer</column>
 <column name="layer7_out_write">out, 1, ap_fifo, layer7_out, pointer</column>
-<column name="w7_Addr_A">out, 32, bram, w7, array</column>
-<column name="w7_EN_A">out, 1, bram, w7, array</column>
-<column name="w7_WEN_A">out, 2, bram, w7, array</column>
-<column name="w7_Din_A">out, 16, bram, w7, array</column>
-<column name="w7_Dout_A">in, 16, bram, w7, array</column>
-<column name="w7_Addr_B">out, 32, bram, w7, array</column>
-<column name="w7_EN_B">out, 1, bram, w7, array</column>
-<column name="w7_WEN_B">out, 2, bram, w7, array</column>
-<column name="w7_Din_B">out, 16, bram, w7, array</column>
-<column name="w7_Dout_B">in, 16, bram, w7, array</column>
 </table>
 </item>
 </section>

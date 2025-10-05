@@ -16,7 +16,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 10110 \
+    id 60 \
     name layer8_out \
     reset_level 1 \
     sync_rst true \
@@ -34,7 +34,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 10109 \
+    id 59 \
     name layer7_out \
     type fifo \
     dir I \
@@ -111,7 +111,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 
 # RegSlice definition:
-set ID 10111
+set ID 61
 set RegSliceName myproject_regslice_both
 set RegSliceInstName myproject_regslice_both_U
 set CoreName ap_simcore_myproject_regslice_both

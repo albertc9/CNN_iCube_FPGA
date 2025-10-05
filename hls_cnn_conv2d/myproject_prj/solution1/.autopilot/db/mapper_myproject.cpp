@@ -247,52 +247,16 @@ unsigned int ap_apatb_layer8_out_cap_bc;
 static AESL_RUNTIME_BC __xlx_layer8_out_V_size_Reader("../tv/stream_size/stream_size_out_layer8_out.dat");
 using hls::sim::Byte;
 struct __cosim_s2__ { char data[2]; };
-extern "C" void myproject(__cosim_s2__*, __cosim_s2__*, Byte<2>*, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, Byte<2>*, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, Byte<2>*);
-extern "C" void apatb_myproject_hw(volatile void * __xlx_apatb_param_input_1, volatile void * __xlx_apatb_param_layer8_out, volatile void * __xlx_apatb_param_w2, volatile void * __xlx_apatb_param_b2_0, volatile void * __xlx_apatb_param_b2_1, volatile void * __xlx_apatb_param_b2_2, volatile void * __xlx_apatb_param_b2_3, volatile void * __xlx_apatb_param_b2_4, volatile void * __xlx_apatb_param_b2_5, volatile void * __xlx_apatb_param_b2_6, volatile void * __xlx_apatb_param_b2_7, volatile void * __xlx_apatb_param_b2_8, volatile void * __xlx_apatb_param_b2_9, volatile void * __xlx_apatb_param_b2_10, volatile void * __xlx_apatb_param_b2_11, volatile void * __xlx_apatb_param_b2_12, volatile void * __xlx_apatb_param_b2_13, volatile void * __xlx_apatb_param_b2_14, volatile void * __xlx_apatb_param_b2_15, volatile void * __xlx_apatb_param_b2_16, volatile void * __xlx_apatb_param_b2_17, volatile void * __xlx_apatb_param_b2_18, volatile void * __xlx_apatb_param_b2_19, volatile void * __xlx_apatb_param_w4, volatile void * __xlx_apatb_param_b4_0, volatile void * __xlx_apatb_param_b4_1, volatile void * __xlx_apatb_param_b4_2, volatile void * __xlx_apatb_param_b4_3, volatile void * __xlx_apatb_param_b4_4, volatile void * __xlx_apatb_param_b4_5, volatile void * __xlx_apatb_param_b4_6, volatile void * __xlx_apatb_param_b4_7, volatile void * __xlx_apatb_param_b4_8, volatile void * __xlx_apatb_param_b4_9, volatile void * __xlx_apatb_param_w7) {
+extern "C" void myproject(__cosim_s2__*, __cosim_s2__*);
+extern "C" void apatb_myproject_hw(volatile void * __xlx_apatb_param_input_1, volatile void * __xlx_apatb_param_layer8_out) {
 using hls::sim::createStream;
 auto* sinput_1 = createStream((hls::stream<__cosim_s2__>*)__xlx_apatb_param_input_1);
   //Create input buffer for layer8_out
   ap_apatb_layer8_out_cap_bc = __xlx_layer8_out_V_size_Reader.read_size();
   __cosim_s2__* __xlx_layer8_out_input_buffer= new __cosim_s2__[ap_apatb_layer8_out_cap_bc];
 auto* slayer8_out = createStream((hls::stream<__cosim_s2__>*)__xlx_apatb_param_layer8_out);
-  // Collect __xlx_w2__tmp_vec
-std::vector<Byte<2>> __xlx_w2__tmp_vec;
-for (size_t i = 0; i < 800; ++i){
-__xlx_w2__tmp_vec.push_back(((Byte<2>*)__xlx_apatb_param_w2)[i]);
-}
-  int __xlx_size_param_w2 = 800;
-  int __xlx_offset_param_w2 = 0;
-  int __xlx_offset_byte_param_w2 = 0*2;
-  // Collect __xlx_w4__tmp_vec
-std::vector<Byte<2>> __xlx_w4__tmp_vec;
-for (size_t i = 0; i < 2000; ++i){
-__xlx_w4__tmp_vec.push_back(((Byte<2>*)__xlx_apatb_param_w4)[i]);
-}
-  int __xlx_size_param_w4 = 2000;
-  int __xlx_offset_param_w4 = 0;
-  int __xlx_offset_byte_param_w4 = 0*2;
-  // Collect __xlx_w7__tmp_vec
-std::vector<Byte<2>> __xlx_w7__tmp_vec;
-for (size_t i = 0; i < 2380; ++i){
-__xlx_w7__tmp_vec.push_back(((Byte<2>*)__xlx_apatb_param_w7)[i]);
-}
-  int __xlx_size_param_w7 = 2380;
-  int __xlx_offset_param_w7 = 0;
-  int __xlx_offset_byte_param_w7 = 0*2;
   // DUT call
-  myproject(sinput_1->data<__cosim_s2__>(), slayer8_out->data<__cosim_s2__>(), __xlx_w2__tmp_vec.data(), __xlx_apatb_param_b2_0, __xlx_apatb_param_b2_1, __xlx_apatb_param_b2_2, __xlx_apatb_param_b2_3, __xlx_apatb_param_b2_4, __xlx_apatb_param_b2_5, __xlx_apatb_param_b2_6, __xlx_apatb_param_b2_7, __xlx_apatb_param_b2_8, __xlx_apatb_param_b2_9, __xlx_apatb_param_b2_10, __xlx_apatb_param_b2_11, __xlx_apatb_param_b2_12, __xlx_apatb_param_b2_13, __xlx_apatb_param_b2_14, __xlx_apatb_param_b2_15, __xlx_apatb_param_b2_16, __xlx_apatb_param_b2_17, __xlx_apatb_param_b2_18, __xlx_apatb_param_b2_19, __xlx_w4__tmp_vec.data(), __xlx_apatb_param_b4_0, __xlx_apatb_param_b4_1, __xlx_apatb_param_b4_2, __xlx_apatb_param_b4_3, __xlx_apatb_param_b4_4, __xlx_apatb_param_b4_5, __xlx_apatb_param_b4_6, __xlx_apatb_param_b4_7, __xlx_apatb_param_b4_8, __xlx_apatb_param_b4_9, __xlx_w7__tmp_vec.data());
+  myproject(sinput_1->data<__cosim_s2__>(), slayer8_out->data<__cosim_s2__>());
 sinput_1->transfer((hls::stream<__cosim_s2__>*)__xlx_apatb_param_input_1);
 slayer8_out->transfer((hls::stream<__cosim_s2__>*)__xlx_apatb_param_layer8_out);
-// print __xlx_apatb_param_w2
-for (size_t i = 0; i < __xlx_size_param_w2; ++i) {
-((Byte<2>*)__xlx_apatb_param_w2)[i] = __xlx_w2__tmp_vec[__xlx_offset_param_w2+i];
-}
-// print __xlx_apatb_param_w4
-for (size_t i = 0; i < __xlx_size_param_w4; ++i) {
-((Byte<2>*)__xlx_apatb_param_w4)[i] = __xlx_w4__tmp_vec[__xlx_offset_param_w4+i];
-}
-// print __xlx_apatb_param_w7
-for (size_t i = 0; i < __xlx_size_param_w7; ++i) {
-((Byte<2>*)__xlx_apatb_param_w7)[i] = __xlx_w7__tmp_vec[__xlx_offset_param_w7+i];
-}
 }

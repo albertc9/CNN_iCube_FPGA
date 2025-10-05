@@ -13,6 +13,7 @@ port (
     ap_clk : IN STD_LOGIC;
     ap_rst : IN STD_LOGIC;
     ap_start : IN STD_LOGIC;
+    start_full_n : IN STD_LOGIC;
     ap_done : OUT STD_LOGIC;
     ap_continue : IN STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
@@ -26,7 +27,9 @@ port (
     layer5_out_num_data_valid : IN STD_LOGIC_VECTOR (8 downto 0);
     layer5_out_fifo_cap : IN STD_LOGIC_VECTOR (8 downto 0);
     layer5_out_full_n : IN STD_LOGIC;
-    layer5_out_write : OUT STD_LOGIC );
+    layer5_out_write : OUT STD_LOGIC;
+    start_out : OUT STD_LOGIC;
+    start_write : OUT STD_LOGIC );
 end;
 
 
@@ -34,8 +37,8 @@ architecture behav of myproject_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_pp0_stage0 : STD_LOGIC_VECTOR (0 downto 0) := "1";
-    constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_boolean_1 : BOOLEAN := true;
+    constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_boolean_0 : BOOLEAN := false;
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
     constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
@@ -73,6 +76,8 @@ architecture behav of myproject_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_
     constant ap_const_lv15_0 : STD_LOGIC_VECTOR (14 downto 0) := "000000000000000";
 
 attribute shreg_extract : string;
+    signal real_start : STD_LOGIC;
+    signal start_once_reg : STD_LOGIC := '0';
     signal ap_CS_fsm : STD_LOGIC_VECTOR (0 downto 0) := "1";
     attribute fsm_encoding : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
@@ -82,6 +87,7 @@ attribute shreg_extract : string;
     signal ap_enable_reg_pp0_iter1 : STD_LOGIC := '0';
     signal ap_enable_reg_pp0_iter2 : STD_LOGIC := '0';
     signal ap_idle_pp0 : STD_LOGIC;
+    signal internal_ap_ready : STD_LOGIC;
     signal ap_done_reg : STD_LOGIC := '0';
     signal ap_block_state1_pp0_stage0_iter0 : BOOLEAN;
     signal ap_block_state2_pp0_stage0_iter1 : BOOLEAN;
@@ -166,7 +172,7 @@ attribute shreg_extract : string;
     signal ap_NS_fsm : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_enable_pp0 : STD_LOGIC;
     signal ap_start_int : STD_LOGIC;
-    signal ap_condition_119 : BOOLEAN;
+    signal ap_condition_133 : BOOLEAN;
     signal ap_ce_reg : STD_LOGIC;
 
     component myproject_flow_control_loop_pipe IS
@@ -193,8 +199,8 @@ begin
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => ap_start,
-        ap_ready => ap_ready,
+        ap_start => real_start,
+        ap_ready => internal_ap_ready,
         ap_done => ap_done,
         ap_start_int => ap_start_int,
         ap_loop_init => ap_loop_init,
@@ -267,10 +273,26 @@ begin
     end process;
 
 
+    start_once_reg_assign_proc : process(ap_clk)
+    begin
+        if (ap_clk'event and ap_clk =  '1') then
+            if (ap_rst = '1') then
+                start_once_reg <= ap_const_logic_0;
+            else
+                if (((real_start = ap_const_logic_1) and (internal_ap_ready = ap_const_logic_0))) then 
+                    start_once_reg <= ap_const_logic_1;
+                elsif ((internal_ap_ready = ap_const_logic_1)) then 
+                    start_once_reg <= ap_const_logic_0;
+                end if; 
+            end if;
+        end if;
+    end process;
+
+
     i_fu_100_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if ((ap_const_boolean_1 = ap_condition_119)) then
+            if ((ap_const_boolean_1 = ap_condition_133)) then
                 if ((icmp_ln41_fu_125_p2 = ap_const_lv1_0)) then 
                     i_fu_100 <= i_4_fu_131_p2;
                 elsif ((ap_loop_init = ap_const_logic_1)) then 
@@ -346,9 +368,9 @@ begin
     end process;
 
 
-    ap_condition_119_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0_11001, ap_start_int)
+    ap_condition_133_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0_11001, ap_start_int)
     begin
-                ap_condition_119 <= ((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_start_int = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0));
+                ap_condition_133 <= ((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_start_int = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0));
     end process;
 
 
@@ -394,6 +416,7 @@ begin
     end process;
 
     ap_loop_exit_ready <= ap_condition_exit_pp0_iter0_stage0;
+    ap_ready <= internal_ap_ready;
 
     ap_ready_int_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0_subdone, ap_start_int)
     begin
@@ -484,6 +507,16 @@ begin
     out_data_8_fu_336_p3 <= 
         trunc_ln44_45_fu_146_p1 when (icmp_ln51_fu_330_p2(0) = '1') else 
         ap_const_lv15_0;
+
+    real_start_assign_proc : process(ap_start, start_full_n, start_once_reg)
+    begin
+        if (((start_full_n = ap_const_logic_0) and (start_once_reg = ap_const_logic_0))) then 
+            real_start <= ap_const_logic_0;
+        else 
+            real_start <= ap_start;
+        end if; 
+    end process;
+
     select_ln51_16_fu_406_p3 <= 
         trunc_ln44_38_fu_240_p4 when (icmp_ln51_24_fu_400_p2(0) = '1') else 
         ap_const_lv15_0;
@@ -502,6 +535,17 @@ begin
     select_ln51_fu_392_p3 <= 
         trunc_ln44_37_fu_220_p4 when (icmp_ln51_23_fu_386_p2(0) = '1') else 
         ap_const_lv15_0;
+    start_out <= real_start;
+
+    start_write_assign_proc : process(real_start, start_once_reg)
+    begin
+        if (((real_start = ap_const_logic_1) and (start_once_reg = ap_const_logic_0))) then 
+            start_write <= ap_const_logic_1;
+        else 
+            start_write <= ap_const_logic_0;
+        end if; 
+    end process;
+
     trunc_ln44_23_fu_210_p4 <= layer4_out_dout(79 downto 64);
     trunc_ln44_24_fu_230_p4 <= layer4_out_dout(95 downto 80);
     trunc_ln44_25_fu_250_p4 <= layer4_out_dout(111 downto 96);

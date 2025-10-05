@@ -24,7 +24,7 @@ CONFIG = {
 
     # Quantization / scheduling
     "precision": "ap_fixed<16,6>",
-    "reuse": 1,                     # increase to save resources
+    "reuse": 4,                     # Force resource sharing for internal storage
     "strip_dropout": False,
 
     # Build / test
@@ -99,8 +99,8 @@ def make_hls_config(model, default_precision="ap_fixed<16,6>", reuse=1):
         'Model': {
             'Precision': default_precision,
             'ReuseFactor': int(reuse),
-            'Strategy': 'Latency',
-            'BramFactor': 1,
+            'Strategy': 'Resource',     # Force internal storage
+            'BramFactor': 4,           # Increase internal BRAM usage
             'PipelineStyle': 'dataflow',
             'ClockPeriod': 5,
             'IOType': 'io_stream'
@@ -127,6 +127,20 @@ def make_hls_config(model, default_precision="ap_fixed<16,6>", reuse=1):
                 cfg['LayerName'][name] = {
                     'Precision': default_precision
                 }
+
+    # Force all weights/biases to internal ROM/BRAM storage
+    for layer in model.layers:
+        name = getattr(layer, 'name', None)
+        cls = layer.__class__.__name__
+        if name and cls in ("Conv2D", "Dense"):
+            if name not in cfg['LayerName']:
+                cfg['LayerName'][name] = {}
+            cfg['LayerName'][name].update({
+                'ram_style': 'block',       # Use BRAM
+                'rom_style': 'block',       # Use BRAM for ROM
+                'weight_rom': True,         # Weights as internal ROM
+                'bias_rom': True            # Biases as internal ROM
+            })
 
     return cfg
 

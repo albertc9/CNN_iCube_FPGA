@@ -16,7 +16,6 @@
 #include "firmware/weights/w4.h"
 #include "firmware/weights/b4.h"
 #include "firmware/weights/w7.h"
-#include "firmware/weights/b7.h"
 
 #define CHECKPOINT 5000
 

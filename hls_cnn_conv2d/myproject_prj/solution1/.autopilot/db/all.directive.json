@@ -16,8 +16,8 @@
       ]
     },
     "slx": false,
-    "sourceFile": "/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/csynth.tcl",
-    "sourceLine": 20,
+    "sourceFile": "/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/build_prj.tcl",
+    "sourceLine": 183,
     "success": true
   }
 ]

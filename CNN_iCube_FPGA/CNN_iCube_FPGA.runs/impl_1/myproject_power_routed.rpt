@@ -1,0 +1,191 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date             : Sat Oct  4 22:24:11 2025
+| Host             : dhcp-172-31-232-100.mobile.uci.edu running 64-bit unknown
+| Command          : report_power -file myproject_power_routed.rpt -pb myproject_power_summary_routed.pb -rpx myproject_power_routed.rpx
+| Design           : myproject
+| Device           : xcku5p-ffvb676-2-e
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 6.875        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 6.364        |
+| Device Static (W)        | 0.511        |
+| Effective TJA (C/W)      | 1.7          |
+| Max Ambient (C)          | 88.1         |
+| Junction Temperature (C) | 36.9         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| CLB Logic      |     0.782 |     1138 |       --- |             --- |
+|   LUT as Logic |     0.595 |      466 |    216960 |            0.21 |
+|   CARRY8       |     0.117 |       50 |     27120 |            0.18 |
+|   Register     |     0.069 |      450 |    433920 |            0.10 |
+|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
+|   Others       |     0.000 |       53 |       --- |             --- |
+| Signals        |     0.556 |      826 |       --- |             --- |
+| Block RAM      |     0.005 |      0.5 |       480 |            0.10 |
+| I/O            |     5.022 |       81 |       280 |           28.93 |
+| Static Power   |     0.511 |          |           |                 |
+| Total          |     6.875 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint     |       0.850 |     1.794 |       1.579 |      0.215 |       NA    | Unspecified | NA         |
+| Vccint_io  |       0.850 |     0.341 |       0.304 |      0.037 |       NA    | Unspecified | NA         |
+| Vccbram    |       0.850 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
+| Vccaux     |       1.800 |     0.124 |       0.000 |      0.124 |       NA    | Unspecified | NA         |
+| Vccaux_io  |       1.800 |     0.612 |       0.581 |      0.031 |       NA    | Unspecified | NA         |
+| Vcco33     |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25     |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18     |       1.800 |     2.065 |       2.065 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15     |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135    |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12     |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco10     |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc     |       1.800 |     0.008 |       0.000 |      0.008 |       NA    | Unspecified | NA         |
+| MGTYAVcc   |       0.900 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTYAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTYVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.7                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 2.8                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------------------------------------------------------------------------+-----------+
+| Name                                                                                       | Power (W) |
++--------------------------------------------------------------------------------------------+-----------+
+| myproject                                                                                  |     6.364 |
+|   CTRL_s_axi_U                                                                             |     0.127 |
+|   ap_clk_IBUF_inst                                                                         |     0.006 |
+|   conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0                    |     0.384 |
+|     call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62 |     0.266 |
+|     regslice_both_input_1_U                                                                |     0.035 |
+|   conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0                   |     0.166 |
+|     grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745       |     0.028 |
+|       flow_control_loop_pipe_sequential_init_U                                             |     0.020 |
+|   dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0                         |     0.047 |
+|     grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59        |     0.045 |
+|       flow_control_loop_pipe_sequential_init_U                                             |     0.030 |
+|   input_1_TVALID_IBUF_inst                                                                 |     0.008 |
+|   layer2_out_U                                                                             |     0.097 |
+|   layer3_out_U                                                                             |     0.109 |
+|   layer4_out_U                                                                             |     0.107 |
+|   layer5_out_U                                                                             |     0.147 |
+|   layer7_out_U                                                                             |     0.001 |
+|   layer8_out_TREADY_IBUF_inst                                                              |     0.011 |
+|   relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0                    |     0.056 |
+|     flow_control_loop_pipe_U                                                               |     0.029 |
+|   relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0                    |     0.030 |
+|     flow_control_loop_pipe_U                                                               |     0.017 |
+|   s_axi_CTRL_ARADDR_IBUF[0]_inst                                                           |     0.008 |
+|   s_axi_CTRL_ARADDR_IBUF[1]_inst                                                           |     0.008 |
+|   s_axi_CTRL_ARADDR_IBUF[2]_inst                                                           |     0.008 |
+|   s_axi_CTRL_ARADDR_IBUF[3]_inst                                                           |     0.008 |
+|   s_axi_CTRL_ARVALID_IBUF_inst                                                             |     0.009 |
+|   s_axi_CTRL_AWADDR_IBUF[0]_inst                                                           |     0.007 |
+|   s_axi_CTRL_AWADDR_IBUF[1]_inst                                                           |     0.007 |
+|   s_axi_CTRL_AWADDR_IBUF[2]_inst                                                           |     0.007 |
+|   s_axi_CTRL_AWADDR_IBUF[3]_inst                                                           |     0.007 |
+|   s_axi_CTRL_AWVALID_IBUF_inst                                                             |     0.009 |
+|   s_axi_CTRL_BREADY_IBUF_inst                                                              |     0.007 |
+|   s_axi_CTRL_RREADY_IBUF_inst                                                              |     0.007 |
+|   s_axi_CTRL_WDATA_IBUF[0]_inst                                                            |     0.008 |
+|   s_axi_CTRL_WDATA_IBUF[1]_inst                                                            |     0.007 |
+|   s_axi_CTRL_WDATA_IBUF[7]_inst                                                            |     0.007 |
+|   s_axi_CTRL_WSTRB_IBUF[0]_inst                                                            |     0.007 |
+|   s_axi_CTRL_WVALID_IBUF_inst                                                              |     0.008 |
+|   sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0                            |     0.009 |
+|     regslice_both_layer8_out_U                                                             |     0.005 |
+|     sigmoid_table_U                                                                        |     0.005 |
+|   start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_U                |     0.001 |
++--------------------------------------------------------------------------------------------+-----------+
+
+

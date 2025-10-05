@@ -10,6 +10,7 @@ module myproject_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_conf
         ap_clk,
         ap_rst,
         ap_start,
+        start_full_n,
         ap_done,
         ap_continue,
         ap_idle,
@@ -23,7 +24,9 @@ module myproject_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_conf
         layer3_out_num_data_valid,
         layer3_out_fifo_cap,
         layer3_out_full_n,
-        layer3_out_write
+        layer3_out_write,
+        start_out,
+        start_write
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -31,6 +34,7 @@ parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
 input   ap_clk;
 input   ap_rst;
 input   ap_start;
+input   start_full_n;
 output   ap_done;
 input   ap_continue;
 output   ap_idle;
@@ -45,17 +49,23 @@ input  [8:0] layer3_out_num_data_valid;
 input  [8:0] layer3_out_fifo_cap;
 input   layer3_out_full_n;
 output   layer3_out_write;
+output   start_out;
+output   start_write;
 
 reg ap_idle;
 reg layer2_out_read;
 reg layer3_out_write;
+reg start_write;
 
+reg    real_start;
+reg    start_once_reg;
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_pp0_stage0;
 wire    ap_enable_reg_pp0_iter0;
 reg    ap_enable_reg_pp0_iter1;
 reg    ap_enable_reg_pp0_iter2;
 reg    ap_idle_pp0;
+wire    internal_ap_ready;
 reg    ap_done_reg;
 reg    ap_block_state1_pp0_stage0_iter0;
 reg    ap_block_state2_pp0_stage0_iter1;
@@ -200,11 +210,12 @@ reg    ap_loop_exit_ready_pp0_iter1_reg;
 reg   [0:0] ap_NS_fsm;
 wire    ap_enable_pp0;
 wire    ap_start_int;
-reg    ap_condition_139;
+reg    ap_condition_153;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
+#0 start_once_reg = 1'b0;
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter2 = 1'b0;
@@ -215,8 +226,8 @@ end
 myproject_flow_control_loop_pipe flow_control_loop_pipe_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(ap_start),
-    .ap_ready(ap_ready),
+    .ap_start(real_start),
+    .ap_ready(internal_ap_ready),
     .ap_done(ap_done),
     .ap_start_int(ap_start_int),
     .ap_loop_init(ap_loop_init),
@@ -242,7 +253,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue_int == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((ap_loop_exit_ready_pp0_iter1_reg == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        end else if (((1'b0 == ap_block_pp0_stage0_subdone) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -271,7 +282,19 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_condition_139)) begin
+    if (ap_rst == 1'b1) begin
+        start_once_reg <= 1'b0;
+    end else begin
+        if (((real_start == 1'b1) & (internal_ap_ready == 1'b0))) begin
+            start_once_reg <= 1'b1;
+        end else if ((internal_ap_ready == 1'b1)) begin
+            start_once_reg <= 1'b0;
+        end
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_condition_153)) begin
         if ((icmp_ln41_fu_185_p2 == 1'd0)) begin
             i_fu_160 <= i_2_fu_191_p2;
         end else if ((ap_loop_init == 1'b1)) begin
@@ -315,7 +338,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_loop_exit_ready_pp0_iter1_reg == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((1'b0 == ap_block_pp0_stage0_subdone) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_done_int = 1'b1;
     end else begin
         ap_done_int = ap_done_reg;
@@ -387,6 +410,22 @@ always @ (*) begin
 end
 
 always @ (*) begin
+    if (((start_full_n == 1'b0) & (start_once_reg == 1'b0))) begin
+        real_start = 1'b0;
+    end else begin
+        real_start = ap_start;
+    end
+end
+
+always @ (*) begin
+    if (((real_start == 1'b1) & (start_once_reg == 1'b0))) begin
+        start_write = 1'b1;
+    end else begin
+        start_write = 1'b0;
+    end
+end
+
+always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_pp0_stage0 : begin
             ap_NS_fsm = ap_ST_fsm_pp0_stage0;
@@ -426,7 +465,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_condition_139 = ((1'b0 == ap_block_pp0_stage0_11001) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0));
+    ap_condition_153 = ((1'b0 == ap_block_pp0_stage0_11001) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0));
 end
 
 assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
@@ -434,6 +473,8 @@ assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
 assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
+
+assign ap_ready = internal_ap_ready;
 
 assign i_2_fu_191_p2 = (ap_sig_allocacmp_i_1 + 8'd1);
 
@@ -530,6 +571,8 @@ assign select_ln51_8_fu_764_p3 = ((icmp_ln51_12_fu_758_p2[0:0] == 1'b1) ? trunc_
 assign select_ln51_9_fu_778_p3 = ((icmp_ln51_13_fu_772_p2[0:0] == 1'b1) ? trunc_ln44_28_fu_460_p4 : 15'd0);
 
 assign select_ln51_fu_652_p3 = ((icmp_ln51_4_fu_646_p2[0:0] == 1'b1) ? trunc_ln44_s_fu_280_p4 : 15'd0);
+
+assign start_out = real_start;
 
 assign trunc_ln44_10_fu_390_p4 = {{layer2_out_dout[175:160]}};
 

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_s'
 ================================================================
-* Date:           Sat Oct  4 16:12:45 2025
+* Date:           Sat Oct  4 21:50:14 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        myproject_prj
@@ -87,8 +87,8 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 1.61>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i160 %layer5_out, void @empty, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i160 %layer4_out, void @empty, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i160 %layer5_out, void @empty_10, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i160 %layer4_out, void @empty_10, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.42ns)   --->   "%store_ln41 = store i8 0, i8 %i" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 9 'store' 'store_ln41' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln41 = br void %ReLUPackLoop" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 10 'br' 'br_ln41' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i_3 = load i8 %i" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 11 'load' 'i_3' <Predicate = true> <Delay = 0.00>
@@ -142,9 +142,9 @@ ST_2 : Operation 56 [1/1] (0.39ns)   --->   "%select_ln51_20 = select i1 %icmp_l
 ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%ret_ln59 = ret" [firmware/nnet_utils/nnet_activation_stream.h:59]   --->   Operation 73 'ret' 'ret_ln59' <Predicate = (icmp_ln41)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 1.68>
-ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%specpipeline_ln42 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [firmware/nnet_utils/nnet_activation_stream.h:42]   --->   Operation 57 'specpipeline' 'specpipeline_ln42' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%specpipeline_ln42 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_6" [firmware/nnet_utils/nnet_activation_stream.h:42]   --->   Operation 57 'specpipeline' 'specpipeline_ln42' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%speclooptripcount_ln41 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 238, i64 238, i64 238" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 58 'speclooptripcount' 'speclooptripcount_ln41' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%specloopname_ln41 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 59 'specloopname' 'specloopname_ln41' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%specloopname_ln41 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9" [firmware/nnet_utils/nnet_activation_stream.h:41]   --->   Operation 59 'specloopname' 'specloopname_ln41' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%zext_ln45 = zext i15 %out_data_8" [firmware/nnet_utils/nnet_activation_stream.h:45]   --->   Operation 60 'zext' 'zext_ln45' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln45_4 = zext i15 %out_data_10" [firmware/nnet_utils/nnet_activation_stream.h:45]   --->   Operation 61 'zext' 'zext_ln45_4' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%zext_ln45_5 = zext i15 %out_data_12" [firmware/nnet_utils/nnet_activation_stream.h:45]   --->   Operation 62 'zext' 'zext_ln45_5' <Predicate = true> <Delay = 0.00>
@@ -293,7 +293,7 @@ ret_ln59               (ret              ) [ 0000]
 <pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty"/></StgValue>
+<StgValue><ssdm name="empty_10"/></StgValue>
 </bind>
 </comp>
 
@@ -311,7 +311,7 @@ ret_ln59               (ret              ) [ 0000]
 <pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_1"/></StgValue>
+<StgValue><ssdm name="empty_6"/></StgValue>
 </bind>
 </comp>
 
@@ -680,7 +680,7 @@ ret_ln59               (ret              ) [ 0000]
 <pin id="95" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_5"/></StgValue>
+<StgValue><ssdm name="empty_9"/></StgValue>
 </bind>
 </comp>
 

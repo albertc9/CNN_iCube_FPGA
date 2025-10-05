@@ -6,182 +6,76 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="myproject_myproject,hls_ip_2023_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcku5p-ffvb676-2-e,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=4.304000,HLS_SYN_LAT=416350,HLS_SYN_TPT=141314,HLS_SYN_MEM=55,HLS_SYN_DSP=0,HLS_SYN_FF=125441,HLS_SYN_LUT=141551,HLS_VERSION=2023_2}" *)
+(* CORE_GENERATION_INFO="myproject_myproject,hls_ip_2023_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcku5p-ffvb676-2-e,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.922500,HLS_SYN_LAT=4420,HLS_SYN_TPT=3953,HLS_SYN_MEM=55,HLS_SYN_DSP=0,HLS_SYN_FF=5055,HLS_SYN_LUT=4319,HLS_VERSION=2023_2}" *)
 
 module myproject (
+        s_axi_CTRL_AWVALID,
+        s_axi_CTRL_AWREADY,
+        s_axi_CTRL_AWADDR,
+        s_axi_CTRL_WVALID,
+        s_axi_CTRL_WREADY,
+        s_axi_CTRL_WDATA,
+        s_axi_CTRL_WSTRB,
+        s_axi_CTRL_ARVALID,
+        s_axi_CTRL_ARREADY,
+        s_axi_CTRL_ARADDR,
+        s_axi_CTRL_RVALID,
+        s_axi_CTRL_RREADY,
+        s_axi_CTRL_RDATA,
+        s_axi_CTRL_RRESP,
+        s_axi_CTRL_BVALID,
+        s_axi_CTRL_BREADY,
+        s_axi_CTRL_BRESP,
+        ap_clk,
+        ap_rst_n,
+        interrupt,
         input_1_TDATA,
         layer8_out_TDATA,
-        w2_Addr_A,
-        w2_EN_A,
-        w2_Din_A,
-        w2_Dout_A,
-        w2_WEN_A,
-        w2_Clk_A,
-        ap_clk,
-        w2_Rst_A,
-        ap_rst_n,
-        w2_Addr_B,
-        w2_EN_B,
-        w2_Din_B,
-        w2_Dout_B,
-        w2_WEN_B,
-        w2_Clk_B,
-        w2_Rst_B,
-        b2_0,
-        b2_1,
-        b2_2,
-        b2_3,
-        b2_4,
-        b2_5,
-        b2_6,
-        b2_7,
-        b2_8,
-        b2_9,
-        b2_10,
-        b2_11,
-        b2_12,
-        b2_13,
-        b2_14,
-        b2_15,
-        b2_16,
-        b2_17,
-        b2_18,
-        b2_19,
-        w4_Addr_A,
-        w4_EN_A,
-        w4_Din_A,
-        w4_Dout_A,
-        w4_WEN_A,
-        w4_Clk_A,
-        w4_Rst_A,
-        w4_Addr_B,
-        w4_EN_B,
-        w4_Din_B,
-        w4_Dout_B,
-        w4_WEN_B,
-        w4_Clk_B,
-        w4_Rst_B,
-        b4_0,
-        b4_1,
-        b4_2,
-        b4_3,
-        b4_4,
-        b4_5,
-        b4_6,
-        b4_7,
-        b4_8,
-        b4_9,
-        w7_Addr_A,
-        w7_EN_A,
-        w7_Din_A,
-        w7_Dout_A,
-        w7_WEN_A,
-        w7_Clk_A,
-        w7_Rst_A,
-        w7_Addr_B,
-        w7_EN_B,
-        w7_Din_B,
-        w7_Dout_B,
-        w7_WEN_B,
-        w7_Clk_B,
-        w7_Rst_B,
         input_1_TVALID,
         input_1_TREADY,
-        ap_start,
         layer8_out_TVALID,
-        layer8_out_TREADY,
-        ap_done,
-        ap_ready,
-        ap_idle
+        layer8_out_TREADY
 );
 
+parameter    C_S_AXI_CTRL_DATA_WIDTH = 32;
+parameter    C_S_AXI_CTRL_ADDR_WIDTH = 4;
+parameter    C_S_AXI_DATA_WIDTH = 32;
 
+parameter C_S_AXI_CTRL_WSTRB_WIDTH = (32 / 8);
+parameter C_S_AXI_WSTRB_WIDTH = (32 / 8);
+
+input   s_axi_CTRL_AWVALID;
+output   s_axi_CTRL_AWREADY;
+input  [C_S_AXI_CTRL_ADDR_WIDTH - 1:0] s_axi_CTRL_AWADDR;
+input   s_axi_CTRL_WVALID;
+output   s_axi_CTRL_WREADY;
+input  [C_S_AXI_CTRL_DATA_WIDTH - 1:0] s_axi_CTRL_WDATA;
+input  [C_S_AXI_CTRL_WSTRB_WIDTH - 1:0] s_axi_CTRL_WSTRB;
+input   s_axi_CTRL_ARVALID;
+output   s_axi_CTRL_ARREADY;
+input  [C_S_AXI_CTRL_ADDR_WIDTH - 1:0] s_axi_CTRL_ARADDR;
+output   s_axi_CTRL_RVALID;
+input   s_axi_CTRL_RREADY;
+output  [C_S_AXI_CTRL_DATA_WIDTH - 1:0] s_axi_CTRL_RDATA;
+output  [1:0] s_axi_CTRL_RRESP;
+output   s_axi_CTRL_BVALID;
+input   s_axi_CTRL_BREADY;
+output  [1:0] s_axi_CTRL_BRESP;
+input   ap_clk;
+input   ap_rst_n;
+output   interrupt;
 input  [15:0] input_1_TDATA;
 output  [15:0] layer8_out_TDATA;
-output  [31:0] w2_Addr_A;
-output   w2_EN_A;
-output  [15:0] w2_Din_A;
-input  [15:0] w2_Dout_A;
-output  [1:0] w2_WEN_A;
-output   w2_Clk_A;
-input   ap_clk;
-output   w2_Rst_A;
-input   ap_rst_n;
-output  [31:0] w2_Addr_B;
-output   w2_EN_B;
-output  [15:0] w2_Din_B;
-input  [15:0] w2_Dout_B;
-output  [1:0] w2_WEN_B;
-output   w2_Clk_B;
-output   w2_Rst_B;
-input  [15:0] b2_0;
-input  [15:0] b2_1;
-input  [15:0] b2_2;
-input  [15:0] b2_3;
-input  [15:0] b2_4;
-input  [15:0] b2_5;
-input  [15:0] b2_6;
-input  [15:0] b2_7;
-input  [15:0] b2_8;
-input  [15:0] b2_9;
-input  [15:0] b2_10;
-input  [15:0] b2_11;
-input  [15:0] b2_12;
-input  [15:0] b2_13;
-input  [15:0] b2_14;
-input  [15:0] b2_15;
-input  [15:0] b2_16;
-input  [15:0] b2_17;
-input  [15:0] b2_18;
-input  [15:0] b2_19;
-output  [31:0] w4_Addr_A;
-output   w4_EN_A;
-output  [15:0] w4_Din_A;
-input  [15:0] w4_Dout_A;
-output  [1:0] w4_WEN_A;
-output   w4_Clk_A;
-output   w4_Rst_A;
-output  [31:0] w4_Addr_B;
-output   w4_EN_B;
-output  [15:0] w4_Din_B;
-input  [15:0] w4_Dout_B;
-output  [1:0] w4_WEN_B;
-output   w4_Clk_B;
-output   w4_Rst_B;
-input  [15:0] b4_0;
-input  [15:0] b4_1;
-input  [15:0] b4_2;
-input  [15:0] b4_3;
-input  [15:0] b4_4;
-input  [15:0] b4_5;
-input  [15:0] b4_6;
-input  [15:0] b4_7;
-input  [15:0] b4_8;
-input  [15:0] b4_9;
-output  [31:0] w7_Addr_A;
-output   w7_EN_A;
-output  [15:0] w7_Din_A;
-input  [15:0] w7_Dout_A;
-output  [1:0] w7_WEN_A;
-output   w7_Clk_A;
-output   w7_Rst_A;
-output  [31:0] w7_Addr_B;
-output   w7_EN_B;
-output  [15:0] w7_Din_B;
-input  [15:0] w7_Dout_B;
-output  [1:0] w7_WEN_B;
-output   w7_Clk_B;
-output   w7_Rst_B;
 input   input_1_TVALID;
 output   input_1_TREADY;
-input   ap_start;
 output   layer8_out_TVALID;
 input   layer8_out_TREADY;
-output   ap_done;
-output   ap_ready;
-output   ap_idle;
 
  reg    ap_rst_n_inv;
+wire    ap_start;
+wire    ap_ready;
+wire    ap_done;
+wire    ap_idle;
 wire    conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_start;
 wire    conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_done;
 wire    conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_continue;
@@ -192,14 +86,6 @@ wire    conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_st
 wire    conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_input_1_TREADY;
 wire   [319:0] conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_layer2_out_din;
 wire    conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_layer2_out_write;
-wire   [31:0] conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_Addr_A;
-wire    conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_EN_A;
-wire   [1:0] conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_WEN_A;
-wire   [15:0] conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_Din_A;
-wire   [31:0] conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_Addr_B;
-wire    conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_EN_B;
-wire   [1:0] conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_WEN_B;
-wire   [15:0] conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_Din_B;
 wire    relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_ap_start;
 wire    relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_ap_done;
 wire    relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_ap_continue;
@@ -208,6 +94,8 @@ wire    relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_ap
 wire    relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_layer2_out_read;
 wire   [319:0] relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_layer3_out_din;
 wire    relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_layer3_out_write;
+wire    relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_start_out;
+wire    relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_start_write;
 wire    conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_start;
 wire    conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_done;
 wire    conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_continue;
@@ -218,14 +106,6 @@ wire    conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_s
 wire    conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_layer3_out_read;
 wire   [159:0] conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_layer4_out_din;
 wire    conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_layer4_out_write;
-wire   [31:0] conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_Addr_A;
-wire    conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_EN_A;
-wire   [1:0] conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_WEN_A;
-wire   [15:0] conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_Din_A;
-wire   [31:0] conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_Addr_B;
-wire    conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_EN_B;
-wire   [1:0] conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_WEN_B;
-wire   [15:0] conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_Din_B;
 wire    relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_ap_start;
 wire    relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_ap_done;
 wire    relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_ap_continue;
@@ -234,6 +114,8 @@ wire    relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_ap
 wire    relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_layer4_out_read;
 wire   [159:0] relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_layer5_out_din;
 wire    relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_layer5_out_write;
+wire    relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_start_out;
+wire    relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_start_write;
 wire    dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_start;
 wire    dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_done;
 wire    dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_continue;
@@ -244,14 +126,6 @@ wire    dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_start_w
 wire    dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_layer5_out_read;
 wire   [15:0] dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_layer7_out_din;
 wire    dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_layer7_out_write;
-wire   [31:0] dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_Addr_A;
-wire    dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_EN_A;
-wire   [1:0] dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_WEN_A;
-wire   [15:0] dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_Din_A;
-wire   [31:0] dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_Addr_B;
-wire    dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_EN_B;
-wire   [1:0] dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_WEN_B;
-wire   [15:0] dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_Din_B;
 wire    sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_ap_start;
 wire    sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_ap_done;
 wire    sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_ap_continue;
@@ -285,33 +159,57 @@ wire   [15:0] layer7_out_dout;
 wire   [1:0] layer7_out_num_data_valid;
 wire   [1:0] layer7_out_fifo_cap;
 wire    layer7_out_empty_n;
-wire    ap_sync_ready;
-reg    ap_sync_reg_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_ready;
-wire    ap_sync_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_ready;
-reg    ap_sync_reg_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_ready;
-wire    ap_sync_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_ready;
-reg    ap_sync_reg_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_ready;
-wire    ap_sync_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_ready;
 wire   [0:0] start_for_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_din;
 wire    start_for_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_full_n;
 wire   [0:0] start_for_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_dout;
 wire    start_for_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_empty_n;
+wire   [0:0] start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_din;
+wire    start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_full_n;
+wire   [0:0] start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_dout;
+wire    start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_empty_n;
 wire   [0:0] start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_din;
 wire    start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_full_n;
 wire   [0:0] start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_dout;
 wire    start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_empty_n;
+wire   [0:0] start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_din;
+wire    start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_full_n;
+wire   [0:0] start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_dout;
+wire    start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_empty_n;
 wire   [0:0] start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_din;
 wire    start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_full_n;
 wire   [0:0] start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_dout;
 wire    start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_empty_n;
-wire    ap_ce_reg;
 
-// power-on initialization
-initial begin
-#0 ap_sync_reg_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_ready = 1'b0;
-#0 ap_sync_reg_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_ready = 1'b0;
-#0 ap_sync_reg_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_ready = 1'b0;
-end
+myproject_CTRL_s_axi #(
+    .C_S_AXI_ADDR_WIDTH( C_S_AXI_CTRL_ADDR_WIDTH ),
+    .C_S_AXI_DATA_WIDTH( C_S_AXI_CTRL_DATA_WIDTH ))
+CTRL_s_axi_U(
+    .AWVALID(s_axi_CTRL_AWVALID),
+    .AWREADY(s_axi_CTRL_AWREADY),
+    .AWADDR(s_axi_CTRL_AWADDR),
+    .WVALID(s_axi_CTRL_WVALID),
+    .WREADY(s_axi_CTRL_WREADY),
+    .WDATA(s_axi_CTRL_WDATA),
+    .WSTRB(s_axi_CTRL_WSTRB),
+    .ARVALID(s_axi_CTRL_ARVALID),
+    .ARREADY(s_axi_CTRL_ARREADY),
+    .ARADDR(s_axi_CTRL_ARADDR),
+    .RVALID(s_axi_CTRL_RVALID),
+    .RREADY(s_axi_CTRL_RREADY),
+    .RDATA(s_axi_CTRL_RDATA),
+    .RRESP(s_axi_CTRL_RRESP),
+    .BVALID(s_axi_CTRL_BVALID),
+    .BREADY(s_axi_CTRL_BREADY),
+    .BRESP(s_axi_CTRL_BRESP),
+    .ACLK(ap_clk),
+    .ARESET(ap_rst_n_inv),
+    .ACLK_EN(1'b1),
+    .ap_start(ap_start),
+    .interrupt(interrupt),
+    .ap_ready(ap_ready),
+    .ap_done(ap_done),
+    .ap_idle(ap_idle)
+);
 
 myproject_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_s conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0(
     .ap_clk(ap_clk),
@@ -331,43 +229,14 @@ myproject_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_s c
     .layer2_out_num_data_valid(layer2_out_num_data_valid),
     .layer2_out_fifo_cap(layer2_out_fifo_cap),
     .layer2_out_full_n(layer2_out_full_n),
-    .layer2_out_write(conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_layer2_out_write),
-    .w2_Addr_A(conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_Addr_A),
-    .w2_EN_A(conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_EN_A),
-    .w2_WEN_A(conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_WEN_A),
-    .w2_Din_A(conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_Din_A),
-    .w2_Dout_A(w2_Dout_A),
-    .w2_Addr_B(conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_Addr_B),
-    .w2_EN_B(conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_EN_B),
-    .w2_WEN_B(conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_WEN_B),
-    .w2_Din_B(conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_Din_B),
-    .w2_Dout_B(w2_Dout_B),
-    .b2_0(b2_0),
-    .b2_1(b2_1),
-    .b2_2(b2_2),
-    .b2_3(b2_3),
-    .b2_4(b2_4),
-    .b2_5(b2_5),
-    .b2_6(b2_6),
-    .b2_7(b2_7),
-    .b2_8(b2_8),
-    .b2_9(b2_9),
-    .b2_10(b2_10),
-    .b2_11(b2_11),
-    .b2_12(b2_12),
-    .b2_13(b2_13),
-    .b2_14(b2_14),
-    .b2_15(b2_15),
-    .b2_16(b2_16),
-    .b2_17(b2_17),
-    .b2_18(b2_18),
-    .b2_19(b2_19)
+    .layer2_out_write(conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_layer2_out_write)
 );
 
 myproject_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_s relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .ap_start(relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_ap_start),
+    .start_full_n(start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_full_n),
     .ap_done(relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_ap_done),
     .ap_continue(relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_ap_continue),
     .ap_idle(relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_ap_idle),
@@ -381,7 +250,9 @@ myproject_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_s r
     .layer3_out_num_data_valid(layer3_out_num_data_valid),
     .layer3_out_fifo_cap(layer3_out_fifo_cap),
     .layer3_out_full_n(layer3_out_full_n),
-    .layer3_out_write(relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_layer3_out_write)
+    .layer3_out_write(relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_layer3_out_write),
+    .start_out(relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_start_out),
+    .start_write(relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_start_write)
 );
 
 myproject_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_s conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0(
@@ -404,33 +275,14 @@ myproject_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_s 
     .layer4_out_num_data_valid(layer4_out_num_data_valid),
     .layer4_out_fifo_cap(layer4_out_fifo_cap),
     .layer4_out_full_n(layer4_out_full_n),
-    .layer4_out_write(conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_layer4_out_write),
-    .w4_Addr_A(conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_Addr_A),
-    .w4_EN_A(conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_EN_A),
-    .w4_WEN_A(conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_WEN_A),
-    .w4_Din_A(conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_Din_A),
-    .w4_Dout_A(w4_Dout_A),
-    .w4_Addr_B(conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_Addr_B),
-    .w4_EN_B(conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_EN_B),
-    .w4_WEN_B(conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_WEN_B),
-    .w4_Din_B(conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_Din_B),
-    .w4_Dout_B(w4_Dout_B),
-    .b4_0(b4_0),
-    .b4_1(b4_1),
-    .b4_2(b4_2),
-    .b4_3(b4_3),
-    .b4_4(b4_4),
-    .b4_5(b4_5),
-    .b4_6(b4_6),
-    .b4_7(b4_7),
-    .b4_8(b4_8),
-    .b4_9(b4_9)
+    .layer4_out_write(conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_layer4_out_write)
 );
 
 myproject_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_s relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .ap_start(relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_ap_start),
+    .start_full_n(start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_full_n),
     .ap_done(relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_ap_done),
     .ap_continue(relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_ap_continue),
     .ap_idle(relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_ap_idle),
@@ -444,7 +296,9 @@ myproject_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_s r
     .layer5_out_num_data_valid(layer5_out_num_data_valid),
     .layer5_out_fifo_cap(layer5_out_fifo_cap),
     .layer5_out_full_n(layer5_out_full_n),
-    .layer5_out_write(relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_layer5_out_write)
+    .layer5_out_write(relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_layer5_out_write),
+    .start_out(relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_start_out),
+    .start_write(relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_start_write)
 );
 
 myproject_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_s dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0(
@@ -467,17 +321,7 @@ myproject_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_s dense_
     .layer7_out_num_data_valid(layer7_out_num_data_valid),
     .layer7_out_fifo_cap(layer7_out_fifo_cap),
     .layer7_out_full_n(layer7_out_full_n),
-    .layer7_out_write(dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_layer7_out_write),
-    .w7_Addr_A(dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_Addr_A),
-    .w7_EN_A(dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_EN_A),
-    .w7_WEN_A(dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_WEN_A),
-    .w7_Din_A(dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_Din_A),
-    .w7_Dout_A(w7_Dout_A),
-    .w7_Addr_B(dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_Addr_B),
-    .w7_EN_B(dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_EN_B),
-    .w7_WEN_B(dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_WEN_B),
-    .w7_Din_B(dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_Din_B),
-    .w7_Dout_B(w7_Dout_B)
+    .layer7_out_write(dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_layer7_out_write)
 );
 
 myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0(
@@ -586,6 +430,19 @@ myproject_start_for_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_c
     .if_read(relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_ap_ready)
 );
 
+myproject_start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4fYi start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4fYi_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_din),
+    .if_full_n(start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_full_n),
+    .if_write(relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_start_write),
+    .if_dout(start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_dout),
+    .if_empty_n(start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_empty_n),
+    .if_read(conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_ready)
+);
+
 myproject_start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0 start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -597,6 +454,19 @@ myproject_start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_c
     .if_dout(start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_dout),
     .if_empty_n(start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_empty_n),
     .if_read(relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_ap_ready)
+);
+
+myproject_start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0 start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_din),
+    .if_full_n(start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_full_n),
+    .if_write(relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_start_write),
+    .if_dout(start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_dout),
+    .if_empty_n(start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_empty_n),
+    .if_read(dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_ready)
 );
 
 myproject_start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0 start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_U(
@@ -612,71 +482,27 @@ myproject_start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U
     .if_read(sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_ap_ready)
 );
 
-always @ (posedge ap_clk) begin
-    if (ap_rst_n_inv == 1'b1) begin
-        ap_sync_reg_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_ready <= 1'b0;
-    end else begin
-        if (((ap_sync_ready & ap_start) == 1'b1)) begin
-            ap_sync_reg_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_ready <= 1'b0;
-        end else begin
-            ap_sync_reg_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_ready <= ap_sync_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_ready;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst_n_inv == 1'b1) begin
-        ap_sync_reg_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_ready <= 1'b0;
-    end else begin
-        if (((ap_sync_ready & ap_start) == 1'b1)) begin
-            ap_sync_reg_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_ready <= 1'b0;
-        end else begin
-            ap_sync_reg_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_ready <= ap_sync_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_ready;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst_n_inv == 1'b1) begin
-        ap_sync_reg_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_ready <= 1'b0;
-    end else begin
-        if (((ap_sync_ready & ap_start) == 1'b1)) begin
-            ap_sync_reg_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_ready <= 1'b0;
-        end else begin
-            ap_sync_reg_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_ready <= ap_sync_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_ready;
-        end
-    end
-end
-
 assign ap_done = sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_ap_done;
 
 assign ap_idle = (sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_ap_idle & relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_ap_idle & relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_ap_idle & dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_idle & conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_idle & conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_idle);
 
-assign ap_ready = ap_sync_ready;
+assign ap_ready = conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_ready;
 
 always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign ap_sync_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_ready = (conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_ready | ap_sync_reg_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_ready);
-
-assign ap_sync_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_ready = (conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_ready | ap_sync_reg_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_ready);
-
-assign ap_sync_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_ready = (dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_ready | ap_sync_reg_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_ready);
-
-assign ap_sync_ready = (ap_sync_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_ready & ap_sync_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_ready & ap_sync_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_ready);
-
 assign conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_continue = 1'b1;
 
-assign conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_start = ((ap_sync_reg_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_ready ^ 1'b1) & ap_start);
+assign conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_ap_start = ap_start;
 
 assign conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_continue = 1'b1;
 
-assign conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_start = ((ap_sync_reg_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_ready ^ 1'b1) & ap_start);
+assign conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_ap_start = start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_empty_n;
 
 assign dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_continue = 1'b1;
 
-assign dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_start = ((ap_sync_reg_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_ready ^ 1'b1) & ap_start);
+assign dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_ap_start = start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_empty_n;
 
 assign input_1_TREADY = conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_input_1_TREADY;
 
@@ -696,82 +522,14 @@ assign sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_ap_continue
 
 assign sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_ap_start = start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_empty_n;
 
+assign start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_din = 1'b1;
+
+assign start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_din = 1'b1;
+
 assign start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_din = 1'b1;
 
 assign start_for_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0_din = 1'b1;
 
 assign start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_din = 1'b1;
-
-assign w2_Addr_A = conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_Addr_A;
-
-assign w2_Addr_B = conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_Addr_B;
-
-assign w2_Clk_A = ap_clk;
-
-assign w2_Clk_B = ap_clk;
-
-assign w2_Din_A = 16'd0;
-
-assign w2_Din_B = 16'd0;
-
-assign w2_EN_A = conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_EN_A;
-
-assign w2_EN_B = conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_w2_EN_B;
-
-assign w2_Rst_A = ap_rst_n_inv;
-
-assign w2_Rst_B = ap_rst_n_inv;
-
-assign w2_WEN_A = 1'b0;
-
-assign w2_WEN_B = 1'b0;
-
-assign w4_Addr_A = conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_Addr_A;
-
-assign w4_Addr_B = conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_Addr_B;
-
-assign w4_Clk_A = ap_clk;
-
-assign w4_Clk_B = ap_clk;
-
-assign w4_Din_A = 16'd0;
-
-assign w4_Din_B = 16'd0;
-
-assign w4_EN_A = conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_EN_A;
-
-assign w4_EN_B = conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_w4_EN_B;
-
-assign w4_Rst_A = ap_rst_n_inv;
-
-assign w4_Rst_B = ap_rst_n_inv;
-
-assign w4_WEN_A = 1'b0;
-
-assign w4_WEN_B = 1'b0;
-
-assign w7_Addr_A = dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_Addr_A;
-
-assign w7_Addr_B = dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_Addr_B;
-
-assign w7_Clk_A = ap_clk;
-
-assign w7_Clk_B = ap_clk;
-
-assign w7_Din_A = 16'd0;
-
-assign w7_Din_B = 16'd0;
-
-assign w7_EN_A = dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_EN_A;
-
-assign w7_EN_B = dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_w7_EN_B;
-
-assign w7_Rst_A = ap_rst_n_inv;
-
-assign w7_Rst_B = ap_rst_n_inv;
-
-assign w7_WEN_A = 1'b0;
-
-assign w7_WEN_B = 1'b0;
 
 endmodule //myproject

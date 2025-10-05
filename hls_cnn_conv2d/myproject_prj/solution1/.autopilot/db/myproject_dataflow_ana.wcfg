@@ -52,52 +52,36 @@
             <obj_property name="Render_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_activity.dataflowTxWaveData.Cycles</obj_property>
             <obj_property name="Value_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
             <obj_property name="Detail_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_activity.dataflowTxTooltipData</obj_property>
-            <wvobject type="group" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_activity">
-               <obj_property name="label">grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_activity</obj_property>
+            <wvobject type="group" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_activity">
+               <obj_property name="label">call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_activity</obj_property>
+               <obj_property name="ElementShortName">call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_activity</obj_property>
+               <obj_property name="ObjectShortName">call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_activity</obj_property>
                <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_activity.dataflowTxTooltipData</obj_property>
-               <wvobject type="group" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319_activity">
-                  <obj_property name="label">call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319_activity</obj_property>
+               <obj_property name="Render_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74_activity">
+                  <obj_property name="label">call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319_activity</obj_property>
-                  <obj_property name="ObjectShortName">call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319_activity</obj_property>
+                  <obj_property name="ElementShortName">call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74_activity</obj_property>
+                  <obj_property name="ObjectShortName">call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74_activity</obj_property>
                   <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                   <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                   <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319_activity.dataflowTxTooltipData</obj_property>
-               </wvobject>
-               <wvobject type="group" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411_activity">
-                  <obj_property name="label">grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411_activity</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-                  <obj_property name="UseFullPath">true</obj_property>
-                  <obj_property name="ElementShortName">grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411_activity</obj_property>
-                  <obj_property name="ObjectShortName">grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411_activity</obj_property>
-                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-                  <obj_property name="UseCustomSignalColor">true</obj_property>
-                  <obj_property name="CustomSignalColor">turquoise</obj_property>
-                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
@@ -132,6 +116,22 @@
             <obj_property name="Render_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_activity.dataflowTxWaveData.Cycles</obj_property>
             <obj_property name="Value_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
             <obj_property name="Detail_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0/grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745/grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745_activity">
+               <obj_property name="label">grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0/grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745/grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0/grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745/grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0/grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745/grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
          </wvobject>
          <wvobject type="group" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0/relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_activity">
             <obj_property name="label">relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_activity</obj_property>
@@ -164,37 +164,21 @@
             <obj_property name="Render_Data">/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_activity.dataflowTxWaveData.Cycles</obj_property>
             <obj_property name="Value_Data">/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
             <obj_property name="Detail_Data">/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_activity.dataflowTxTooltipData</obj_property>
-            <wvobject type="group" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555_activity">
-               <obj_property name="label">grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555_activity</obj_property>
+            <wvobject type="group" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59_activity">
+               <obj_property name="label">grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555_activity</obj_property>
+               <obj_property name="ElementShortName">grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59_activity</obj_property>
                <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555_activity.dataflowTxTooltipData</obj_property>
-            </wvobject>
-            <wvobject type="group" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941/grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941_activity">
-               <obj_property name="label">grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941_activity</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941_activity</obj_property>
-               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-               <obj_property name="UseCustomSignalColor">true</obj_property>
-               <obj_property name="CustomSignalColor">turquoise</obj_property>
-               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941/grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941/grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941/grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941_activity.dataflowTxTooltipData</obj_property>
+               <obj_property name="Render_Data">/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59_activity.dataflowTxTooltipData</obj_property>
             </wvobject>
          </wvobject>
          <wvobject type="group" fp_name="/apatb_myproject_top/AESL_inst_myproject/sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0/sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0_activity">
@@ -265,9 +249,9 @@
       <wvobject type="group" fp_name="conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_group">
          <obj_property name="label">conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_activity">
-            <obj_property name="ElementShortName">grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_activity</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_activity">
+            <obj_property name="ElementShortName">call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_activity</obj_property>
+            <obj_property name="ObjectShortName">call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_activity</obj_property>
          </wvobject>
          <wvobject type="group" fp_name="conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0_Input_group">
             <obj_property name="label">Input Channels</obj_property>
@@ -303,6 +287,10 @@
             <wvobject type="group" fp_name="layer2_out_group">
                <obj_property name="label">layer2_out(layer2_out_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/layer2_out_blk_n">
+                  <obj_property name="ElementShortName">layer2_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">layer2_out_blk_n</obj_property>
+               </wvobject>
                <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/layer2_out_din">
                </wvobject>
                <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/layer2_out_full_n">
@@ -315,68 +303,44 @@
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_group">
-            <obj_property name="label">grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310</obj_property>
+         <wvobject type="group" fp_name="call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_group">
+            <obj_property name="label">call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319_activity">
-               <obj_property name="ElementShortName">call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319_activity</obj_property>
-               <obj_property name="ObjectShortName">call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319_activity</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74_activity">
+               <obj_property name="ElementShortName">call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74_activity</obj_property>
+               <obj_property name="ObjectShortName">call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411_activity">
-               <obj_property name="ElementShortName">grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411_activity</obj_property>
-            </wvobject>
-            <wvobject type="group" fp_name="grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_Handshake_group">
+            <wvobject type="group" fp_name="call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/ap_start">
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/ap_done">
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319_group">
-               <obj_property name="label">call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319</obj_property>
+            <wvobject type="group" fp_name="call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74_group">
+               <obj_property name="label">call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319_Handshake_group">
+               <wvobject type="group" fp_name="call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_319/ap_done">
-                     <obj_property name="ElementShortName">ap_done</obj_property>
-                     <obj_property name="ObjectShortName">ap_done</obj_property>
-                  </wvobject>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411_group">
-               <obj_property name="label">grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="group" fp_name="grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411_Handshake_group">
-                  <obj_property name="label">Block-level handshake</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411/ap_start">
-                     <obj_property name="ElementShortName">ap_start</obj_property>
-                     <obj_property name="ObjectShortName">ap_start</obj_property>
-                  </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411/ap_ready">
-                     <obj_property name="ElementShortName">ap_ready</obj_property>
-                     <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_411/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_U0/call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62/call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_74/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
@@ -418,6 +382,10 @@
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
             <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
@@ -457,6 +425,10 @@
       <wvobject type="group" fp_name="conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_group">
          <obj_property name="label">conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0/grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745/grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745_activity">
+            <obj_property name="ElementShortName">grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745_activity</obj_property>
+         </wvobject>
          <wvobject type="group" fp_name="conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0_Input_group">
             <obj_property name="label">Input Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
@@ -527,6 +499,26 @@
                </wvobject>
             </wvobject>
          </wvobject>
+         <wvobject type="group" fp_name="grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745_group">
+            <obj_property name="label">grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0/grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0/grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_U0/grp_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth_fu_745/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
       </wvobject>
       <wvobject type="group" fp_name="relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0_group">
          <obj_property name="label">relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0</obj_property>
@@ -561,6 +553,10 @@
             <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
             </wvobject>
             <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
@@ -601,13 +597,9 @@
       <wvobject type="group" fp_name="dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_group">
          <obj_property name="label">dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555_activity">
-            <obj_property name="ElementShortName">grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555_activity</obj_property>
-         </wvobject>
-         <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941/grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941_activity">
-            <obj_property name="ElementShortName">grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941_activity</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59_activity">
+            <obj_property name="ElementShortName">grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59_activity</obj_property>
          </wvobject>
          <wvobject type="group" fp_name="dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0_Input_group">
             <obj_property name="label">Input Channels</obj_property>
@@ -675,41 +667,21 @@
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555_group">
-            <obj_property name="label">grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555</obj_property>
+         <wvobject type="group" fp_name="grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59_group">
+            <obj_property name="label">grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555_Handshake_group">
+            <wvobject type="group" fp_name="grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555/ap_start">
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_9555/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941_group">
-            <obj_property name="label">grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941_Handshake_group">
-               <obj_property name="label">Block-level handshake</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941/ap_start">
-                  <obj_property name="ElementShortName">ap_start</obj_property>
-                  <obj_property name="ObjectShortName">ap_start</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s_fu_11941/ap_done">
+               <wvobject type="logic" fp_name="/apatb_myproject_top/AESL_inst_myproject/dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0/grp_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare_fu_59/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>

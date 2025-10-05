@@ -11,7 +11,6 @@ void myproject(
     // ****************************************
     // WEIGHT ARRAYS - INTERNAL STORAGE
     // ****************************************
-    // Define weight arrays as internal static storage
     static conv2d_0_weight_t w2[800];
     static conv2d_0_bias_t b2[20];
     static conv2d_1_1_weight_t w4[2000];
@@ -35,13 +34,10 @@ void myproject(
 
     #pragma HLS DATAFLOW 
 
-    // ****************************************
-    // WEIGHT INITIALIZATION
-    // ****************************************
 #ifndef __SYNTHESIS__
     static bool loaded_weights = false;
     if (!loaded_weights) {
-        // Load weights from txt files for C simulation
+        // hls-fpga-machine-learning insert load weights
         nnet::load_weights_from_txt<conv2d_0_weight_t, 800>(w2, "w2.txt");
         nnet::load_weights_from_txt<conv2d_0_bias_t, 20>(b2, "b2.txt");
         nnet::load_weights_from_txt<conv2d_1_1_weight_t, 2000>(w4, "w4.txt");
@@ -50,9 +46,6 @@ void myproject(
         nnet::load_weights_from_txt<dense_4_bias_t, 1>(b7, "b7.txt");
         loaded_weights = true;
     }
-#else
-    // For synthesis, weights are directly initialized by BIND_STORAGE pragma
-    // No explicit initialization needed - HLS will use internal ROM/BRAM
 #endif
 
     // ****************************************

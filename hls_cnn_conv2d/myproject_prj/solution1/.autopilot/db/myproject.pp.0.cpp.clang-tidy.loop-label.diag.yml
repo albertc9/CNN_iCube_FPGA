@@ -70,7 +70,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2383200
+        Offset:          2383046
         Length:          0
         ReplacementText: 'VITIS_LOOP_265_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -79,7 +79,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2383587
+        Offset:          2383433
         Length:          0
         ReplacementText: 'VITIS_LOOP_275_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -88,7 +88,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2383922
+        Offset:          2383768
         Length:          0
         ReplacementText: 'VITIS_LOOP_286_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -97,7 +97,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2384145
+        Offset:          2383991
         Length:          0
         ReplacementText: 'VITIS_LOOP_293_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -106,7 +106,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2384240
+        Offset:          2384086
         Length:          0
         ReplacementText: 'VITIS_LOOP_295_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -115,7 +115,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2384604
+        Offset:          2384450
         Length:          0
         ReplacementText: 'VITIS_LOOP_307_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -124,7 +124,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2384686
+        Offset:          2384532
         Length:          0
         ReplacementText: 'VITIS_LOOP_309_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -133,7 +133,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2385029
+        Offset:          2384875
         Length:          0
         ReplacementText: 'VITIS_LOOP_324_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -142,7 +142,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2385482
+        Offset:          2385328
         Length:          0
         ReplacementText: 'VITIS_LOOP_344_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -151,7 +151,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2385527
+        Offset:          2385373
         Length:          0
         ReplacementText: 'VITIS_LOOP_345_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -160,7 +160,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2385936
+        Offset:          2385782
         Length:          0
         ReplacementText: 'VITIS_LOOP_360_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -169,7 +169,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2386149
+        Offset:          2385995
         Length:          0
         ReplacementText: 'VITIS_LOOP_367_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -178,7 +178,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2389273
+        Offset:          2389119
         Length:          0
         ReplacementText: 'VITIS_LOOP_31_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -187,7 +187,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2389526
+        Offset:          2389372
         Length:          0
         ReplacementText: 'VITIS_LOOP_43_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -196,7 +196,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2389887
+        Offset:          2389733
         Length:          0
         ReplacementText: 'VITIS_LOOP_57_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -205,7 +205,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2390703
+        Offset:          2390549
         Length:          0
         ReplacementText: 'VITIS_LOOP_84_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -214,7 +214,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2391364
+        Offset:          2391210
         Length:          0
         ReplacementText: 'VITIS_LOOP_114_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -223,7 +223,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2392498
+        Offset:          2392344
         Length:          0
         ReplacementText: 'VITIS_LOOP_151_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -232,7 +232,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2392860
+        Offset:          2392706
         Length:          0
         ReplacementText: 'VITIS_LOOP_162_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -241,7 +241,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2393763
+        Offset:          2393609
         Length:          0
         ReplacementText: 'VITIS_LOOP_195_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -250,7 +250,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2394282
+        Offset:          2394128
         Length:          0
         ReplacementText: 'VITIS_LOOP_209_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -259,7 +259,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2395122
+        Offset:          2394968
         Length:          0
         ReplacementText: 'VITIS_LOOP_243_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -268,7 +268,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2395392
+        Offset:          2395238
         Length:          0
         ReplacementText: 'VITIS_LOOP_252_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -277,7 +277,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2395916
+        Offset:          2395762
         Length:          0
         ReplacementText: 'VITIS_LOOP_266_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -286,7 +286,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2396150
+        Offset:          2395996
         Length:          0
         ReplacementText: 'VITIS_LOOP_273_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -295,7 +295,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2396510
+        Offset:          2396356
         Length:          0
         ReplacementText: 'VITIS_LOOP_286_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -304,7 +304,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2397439
+        Offset:          2397285
         Length:          0
         ReplacementText: 'VITIS_LOOP_323_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -313,7 +313,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2397556
+        Offset:          2397402
         Length:          0
         ReplacementText: 'VITIS_LOOP_328_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -322,7 +322,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2397610
+        Offset:          2397456
         Length:          0
         ReplacementText: 'VITIS_LOOP_329_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -331,7 +331,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2398191
+        Offset:          2398037
         Length:          0
         ReplacementText: 'VITIS_LOOP_346_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -340,7 +340,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2398678
+        Offset:          2398524
         Length:          0
         ReplacementText: 'VITIS_LOOP_359_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -349,7 +349,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2398819
+        Offset:          2398665
         Length:          0
         ReplacementText: 'VITIS_LOOP_367_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -358,7 +358,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2399784
+        Offset:          2399630
         Length:          0
         ReplacementText: 'VITIS_LOOP_402_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -367,7 +367,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2400421
+        Offset:          2400267
         Length:          0
         ReplacementText: 'VITIS_LOOP_432_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -376,7 +376,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2400934
+        Offset:          2400780
         Length:          0
         ReplacementText: 'VITIS_LOOP_451_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -385,7 +385,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2401392
+        Offset:          2401238
         Length:          0
         ReplacementText: 'VITIS_LOOP_467_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -394,7 +394,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2401846
+        Offset:          2401692
         Length:          0
         ReplacementText: 'VITIS_LOOP_485_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -403,7 +403,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2402233
+        Offset:          2402079
         Length:          0
         ReplacementText: 'VITIS_LOOP_502_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -412,7 +412,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2402628
+        Offset:          2402474
         Length:          0
         ReplacementText: 'VITIS_LOOP_519_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -421,7 +421,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2403294
+        Offset:          2403140
         Length:          0
         ReplacementText: 'VITIS_LOOP_549_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -430,7 +430,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2403868
+        Offset:          2403714
         Length:          0
         ReplacementText: 'VITIS_LOOP_568_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -439,7 +439,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2404534
+        Offset:          2404380
         Length:          0
         ReplacementText: 'VITIS_LOOP_598_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -448,7 +448,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2405088
+        Offset:          2404934
         Length:          0
         ReplacementText: 'VITIS_LOOP_617_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -457,7 +457,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2405720
+        Offset:          2405566
         Length:          0
         ReplacementText: 'VITIS_LOOP_647_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -466,7 +466,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2406546
+        Offset:          2406392
         Length:          0
         ReplacementText: 'VITIS_LOOP_674_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -475,7 +475,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2407164
+        Offset:          2407010
         Length:          0
         ReplacementText: 'VITIS_LOOP_703_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -484,7 +484,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2407775
+        Offset:          2407621
         Length:          0
         ReplacementText: 'VITIS_LOOP_724_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -493,7 +493,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2408164
+        Offset:          2408010
         Length:          0
         ReplacementText: 'VITIS_LOOP_742_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -502,7 +502,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2408560
+        Offset:          2408406
         Length:          0
         ReplacementText: 'VITIS_LOOP_762_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -511,7 +511,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2410636
+        Offset:          2410482
         Length:          0
         ReplacementText: 'VITIS_LOOP_73_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -520,7 +520,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2410776
+        Offset:          2410622
         Length:          0
         ReplacementText: 'VITIS_LOOP_80_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -529,7 +529,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2411041
+        Offset:          2410887
         Length:          0
         ReplacementText: 'VITIS_LOOP_89_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -538,7 +538,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2411235
+        Offset:          2411081
         Length:          0
         ReplacementText: 'VITIS_LOOP_98_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -547,7 +547,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2411328
+        Offset:          2411174
         Length:          0
         ReplacementText: 'VITIS_LOOP_102_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -556,7 +556,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2411654
+        Offset:          2411500
         Length:          0
         ReplacementText: 'VITIS_LOOP_113_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -565,7 +565,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2411764
+        Offset:          2411610
         Length:          0
         ReplacementText: 'VITIS_LOOP_117_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -574,7 +574,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2412730
+        Offset:          2412576
         Length:          0
         ReplacementText: 'VITIS_LOOP_141_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -583,7 +583,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2412816
+        Offset:          2412662
         Length:          0
         ReplacementText: 'VITIS_LOOP_145_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -592,7 +592,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2413492
+        Offset:          2413338
         Length:          0
         ReplacementText: 'VITIS_LOOP_164_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -601,7 +601,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2414424
+        Offset:          2414270
         Length:          0
         ReplacementText: 'VITIS_LOOP_187_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -610,7 +610,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2414562
+        Offset:          2414408
         Length:          0
         ReplacementText: 'VITIS_LOOP_190_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -619,7 +619,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2414712
+        Offset:          2414558
         Length:          0
         ReplacementText: 'VITIS_LOOP_195_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -628,7 +628,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2414836
+        Offset:          2414682
         Length:          0
         ReplacementText: 'VITIS_LOOP_199_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -637,7 +637,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2420685
+        Offset:          2420531
         Length:          0
         ReplacementText: 'VITIS_LOOP_213_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -646,7 +646,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2420969
+        Offset:          2420815
         Length:          0
         ReplacementText: 'VITIS_LOOP_222_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -655,7 +655,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2424182
+        Offset:          2424028
         Length:          0
         ReplacementText: 'VITIS_LOOP_328_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -664,7 +664,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2424324
+        Offset:          2424170
         Length:          0
         ReplacementText: 'VITIS_LOOP_333_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -673,7 +673,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2424528
+        Offset:          2424374
         Length:          0
         ReplacementText: 'VITIS_LOOP_341_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -682,7 +682,7 @@ Diagnostics:
     FilePath:        /home/work1/Apps/Vitis_HLS/2023.2/common/technology/autopilot/ap_shift_reg.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2461112
+        Offset:          2460958
         Length:          0
         ReplacementText: 'VITIS_LOOP_64_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -691,7 +691,7 @@ Diagnostics:
     FilePath:        /home/work1/Apps/Vitis_HLS/2023.2/common/technology/autopilot/ap_shift_reg.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2461316
+        Offset:          2461162
         Length:          0
         ReplacementText: 'VITIS_LOOP_71_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -700,7 +700,7 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_dense_compressed.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2478245
+        Offset:          2478091
         Length:          0
         ReplacementText: 'VITIS_LOOP_14_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -709,7 +709,37 @@ Diagnostics:
     FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/nnet_utils/nnet_dense_compressed.h
     Replacements:    
       - FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2480116
+        Offset:          2479962
         Length:          0
         ReplacementText: 'VITIS_LOOP_74_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, rom_1p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      28
+    FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/myproject.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, rom_1p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      29
+    FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/myproject.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, rom_1p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      30
+    FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/myproject.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, rom_1p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      31
+    FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/myproject.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, rom_1p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      32
+    FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/myproject.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, rom_1p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      33
+    FilePath:        /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/firmware/myproject.cpp
+    Replacements:    
 ...

@@ -24,37 +24,7 @@ module myproject_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_conf
         layer2_out_num_data_valid,
         layer2_out_fifo_cap,
         layer2_out_full_n,
-        layer2_out_write,
-        w2_Addr_A,
-        w2_EN_A,
-        w2_WEN_A,
-        w2_Din_A,
-        w2_Dout_A,
-        w2_Addr_B,
-        w2_EN_B,
-        w2_WEN_B,
-        w2_Din_B,
-        w2_Dout_B,
-        b2_0,
-        b2_1,
-        b2_2,
-        b2_3,
-        b2_4,
-        b2_5,
-        b2_6,
-        b2_7,
-        b2_8,
-        b2_9,
-        b2_10,
-        b2_11,
-        b2_12,
-        b2_13,
-        b2_14,
-        b2_15,
-        b2_16,
-        b2_17,
-        b2_18,
-        b2_19
+        layer2_out_write
 );
 
 parameter    ap_ST_fsm_state1 = 3'd1;
@@ -79,36 +49,6 @@ input  [8:0] layer2_out_num_data_valid;
 input  [8:0] layer2_out_fifo_cap;
 input   layer2_out_full_n;
 output   layer2_out_write;
-output  [31:0] w2_Addr_A;
-output   w2_EN_A;
-output  [1:0] w2_WEN_A;
-output  [15:0] w2_Din_A;
-input  [15:0] w2_Dout_A;
-output  [31:0] w2_Addr_B;
-output   w2_EN_B;
-output  [1:0] w2_WEN_B;
-output  [15:0] w2_Din_B;
-input  [15:0] w2_Dout_B;
-input  [15:0] b2_0;
-input  [15:0] b2_1;
-input  [15:0] b2_2;
-input  [15:0] b2_3;
-input  [15:0] b2_4;
-input  [15:0] b2_5;
-input  [15:0] b2_6;
-input  [15:0] b2_7;
-input  [15:0] b2_8;
-input  [15:0] b2_9;
-input  [15:0] b2_10;
-input  [15:0] b2_11;
-input  [15:0] b2_12;
-input  [15:0] b2_13;
-input  [15:0] b2_14;
-input  [15:0] b2_15;
-input  [15:0] b2_16;
-input  [15:0] b2_17;
-input  [15:0] b2_18;
-input  [15:0] b2_19;
 
 reg ap_done;
 reg ap_idle;
@@ -122,33 +62,24 @@ reg    ap_done_reg;
 wire    ap_CS_fsm_state1;
 reg    internal_ap_ready;
 reg    input_1_TDATA_blk_n;
-wire    ap_CS_fsm_state2;
-wire   [0:0] icmp_ln24_fu_442_p2;
-reg    ap_block_state1;
-reg   [15:0] input_1_read_reg_569;
-reg    ap_block_state2;
-wire    grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_start;
-wire    grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_done;
-wire    grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_idle;
-wire    grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_ready;
-wire   [319:0] grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_layer2_out_din;
-wire    grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_layer2_out_write;
-wire   [31:0] grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_Addr_A;
-wire    grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_EN_A;
-wire   [1:0] grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_WEN_A;
-wire   [15:0] grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_Din_A;
-wire   [31:0] grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_Addr_B;
-wire    grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_EN_B;
-wire   [1:0] grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_WEN_B;
-wire   [15:0] grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_Din_B;
-reg    grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_start_reg;
-reg    ap_block_state2_ignore_call4;
 wire    ap_CS_fsm_state3;
-reg   [10:0] indvar_flatten_fu_180;
-wire   [10:0] add_ln24_fu_448_p2;
+wire    call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_layer2_out_blk_n;
+reg    layer2_out_blk_n;
+reg    call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_ap_start;
+wire    call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_ap_done;
+wire    call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_ap_idle;
+wire    call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_ap_ready;
+wire   [319:0] call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_layer2_out_din;
+wire    call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_layer2_out_write;
+reg   [10:0] indvar_flatten_fu_52;
+wire   [10:0] add_ln51_fu_98_p2;
+wire    ap_CS_fsm_state2;
+wire   [0:0] icmp_ln51_fu_92_p2;
+reg    ap_block_state1;
+reg    ap_block_state3;
 reg   [2:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
-reg    ap_ST_fsm_state2_blk;
+wire    ap_ST_fsm_state2_blk;
 reg    ap_ST_fsm_state3_blk;
 wire    regslice_both_input_1_U_apdone_blk;
 wire   [15:0] input_1_TDATA_int_regslice;
@@ -162,53 +93,23 @@ initial begin
 #0 start_once_reg = 1'b0;
 #0 ap_done_reg = 1'b0;
 #0 ap_CS_fsm = 3'd1;
-#0 grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_start_reg = 1'b0;
-#0 indvar_flatten_fu_180 = 11'd0;
+#0 indvar_flatten_fu_52 = 11'd0;
 end
 
-myproject_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310(
+myproject_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_start),
-    .ap_done(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_done),
-    .ap_idle(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_idle),
-    .ap_ready(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_ready),
-    .in_elem_0_0_0_0_0_val(input_1_read_reg_569),
-    .layer2_out_din(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_layer2_out_din),
+    .ap_start(call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_ap_start),
+    .ap_done(call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_ap_done),
+    .ap_idle(call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_ap_idle),
+    .ap_ready(call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_ap_ready),
+    .in_elem_0_0_0_0_0_val(input_1_TDATA_int_regslice),
+    .layer2_out_din(call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_layer2_out_din),
     .layer2_out_num_data_valid(9'd0),
     .layer2_out_fifo_cap(9'd0),
     .layer2_out_full_n(layer2_out_full_n),
-    .layer2_out_write(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_layer2_out_write),
-    .w2_Addr_A(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_Addr_A),
-    .w2_EN_A(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_EN_A),
-    .w2_WEN_A(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_WEN_A),
-    .w2_Din_A(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_Din_A),
-    .w2_Dout_A(w2_Dout_A),
-    .w2_Addr_B(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_Addr_B),
-    .w2_EN_B(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_EN_B),
-    .w2_WEN_B(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_WEN_B),
-    .w2_Din_B(grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_Din_B),
-    .w2_Dout_B(w2_Dout_B),
-    .biases_0_val1(b2_0),
-    .biases_1_val2(b2_1),
-    .biases_2_val3(b2_2),
-    .biases_3_val4(b2_3),
-    .biases_4_val5(b2_4),
-    .biases_5_val6(b2_5),
-    .biases_6_val7(b2_6),
-    .biases_7_val8(b2_7),
-    .biases_8_val9(b2_8),
-    .biases_9_val10(b2_9),
-    .biases_10_val11(b2_10),
-    .biases_11_val12(b2_11),
-    .biases_12_val13(b2_12),
-    .biases_13_val14(b2_13),
-    .biases_14_val15(b2_14),
-    .biases_15_val16(b2_15),
-    .biases_16_val17(b2_16),
-    .biases_17_val18(b2_17),
-    .biases_18_val19(b2_18),
-    .biases_19_val20(b2_19)
+    .layer2_out_write(call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_layer2_out_write),
+    .layer2_out_blk_n(call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_layer2_out_blk_n)
 );
 
 myproject_regslice_both #(
@@ -239,20 +140,8 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((1'b0 == ap_block_state2) & (icmp_ln24_fu_442_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+        end else if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln51_fu_92_p2 == 1'd1))) begin
             ap_done_reg <= 1'b1;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_start_reg <= 1'b0;
-    end else begin
-        if (((1'b0 == ap_block_state2_ignore_call4) & (icmp_ln24_fu_442_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-            grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_start_reg <= 1'b1;
-        end else if ((grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_ready == 1'b1)) begin
-            grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -270,16 +159,10 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        indvar_flatten_fu_180 <= 11'd0;
-    end else if (((1'b0 == ap_block_state2) & (icmp_ln24_fu_442_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        indvar_flatten_fu_180 <= add_ln24_fu_448_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state2) & (1'b1 == ap_CS_fsm_state2))) begin
-        input_1_read_reg_569 <= input_1_TDATA_int_regslice;
+    if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1))) begin
+        indvar_flatten_fu_52 <= 11'd0;
+    end else if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln51_fu_92_p2 == 1'd0))) begin
+        indvar_flatten_fu_52 <= add_ln51_fu_98_p2;
     end
 end
 
@@ -291,16 +174,10 @@ always @ (*) begin
     end
 end
 
-always @ (*) begin
-    if ((1'b1 == ap_block_state2)) begin
-        ap_ST_fsm_state2_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state2_blk = 1'b0;
-    end
-end
+assign ap_ST_fsm_state2_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_done == 1'b0)) begin
+    if ((1'b1 == ap_block_state3)) begin
         ap_ST_fsm_state3_blk = 1'b1;
     end else begin
         ap_ST_fsm_state3_blk = 1'b0;
@@ -308,7 +185,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state2) & (icmp_ln24_fu_442_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln51_fu_92_p2 == 1'd1))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -324,7 +201,15 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln24_fu_442_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b1 == ap_CS_fsm_state3) & (input_1_TVALID_int_regslice == 1'b1))) begin
+        call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_ap_start = 1'b1;
+    end else begin
+        call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_ap_start = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state3)) begin
         input_1_TDATA_blk_n = input_1_TVALID_int_regslice;
     end else begin
         input_1_TDATA_blk_n = 1'b1;
@@ -332,7 +217,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state2) & (icmp_ln24_fu_442_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b1 == ap_CS_fsm_state3) & (1'b0 == ap_block_state3))) begin
         input_1_TREADY_int_regslice = 1'b1;
     end else begin
         input_1_TREADY_int_regslice = 1'b0;
@@ -340,7 +225,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state2) & (icmp_ln24_fu_442_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln51_fu_92_p2 == 1'd1))) begin
         internal_ap_ready = 1'b1;
     end else begin
         internal_ap_ready = 1'b0;
@@ -349,7 +234,15 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        layer2_out_write = grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_layer2_out_write;
+        layer2_out_blk_n = call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_layer2_out_blk_n;
+    end else begin
+        layer2_out_blk_n = 1'b1;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state3)) begin
+        layer2_out_write = call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_layer2_out_write;
     end else begin
         layer2_out_write = 1'b0;
     end
@@ -374,23 +267,21 @@ end
 always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
-            if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
+            if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((1'b0 == ap_block_state2) & (icmp_ln24_fu_442_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln51_fu_92_p2 == 1'd1))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
-            end else if (((1'b0 == ap_block_state2) & (icmp_ln24_fu_442_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-                ap_NS_fsm = ap_ST_fsm_state3;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state2;
+                ap_NS_fsm = ap_ST_fsm_state3;
             end
         end
         ap_ST_fsm_state3 : begin
-            if (((1'b1 == ap_CS_fsm_state3) & (grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state3) & (1'b0 == ap_block_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -402,7 +293,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln24_fu_448_p2 = (indvar_flatten_fu_180 + 11'd1);
+assign add_ln51_fu_98_p2 = (indvar_flatten_fu_52 + 11'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -415,39 +306,17 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_block_state2 = ((icmp_ln24_fu_442_p2 == 1'd0) & (input_1_TVALID_int_regslice == 1'b0));
-end
-
-always @ (*) begin
-    ap_block_state2_ignore_call4 = ((icmp_ln24_fu_442_p2 == 1'd0) & (input_1_TVALID_int_regslice == 1'b0));
+    ap_block_state3 = ((call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_layer2_out_blk_n == 1'b0) | (input_1_TVALID_int_regslice == 1'b0));
 end
 
 assign ap_ready = internal_ap_ready;
 
-assign grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_start = grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_start_reg;
-
-assign icmp_ln24_fu_442_p2 = ((indvar_flatten_fu_180 == 11'd1024) ? 1'b1 : 1'b0);
+assign icmp_ln51_fu_92_p2 = ((indvar_flatten_fu_52 == 11'd1024) ? 1'b1 : 1'b0);
 
 assign input_1_TREADY = regslice_both_input_1_U_ack_in;
 
-assign layer2_out_din = grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_layer2_out_din;
+assign layer2_out_din = call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62_layer2_out_din;
 
 assign start_out = real_start;
-
-assign w2_Addr_A = grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_Addr_A;
-
-assign w2_Addr_B = grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_Addr_B;
-
-assign w2_Din_A = 16'd0;
-
-assign w2_Din_B = 16'd0;
-
-assign w2_EN_A = grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_EN_A;
-
-assign w2_EN_B = grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_w2_EN_B;
-
-assign w2_WEN_A = 2'd0;
-
-assign w2_WEN_B = 2'd0;
 
 endmodule //myproject_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_s

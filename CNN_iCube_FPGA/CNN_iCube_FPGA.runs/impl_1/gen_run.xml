@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1759626206">
+<GenRun Id="impl_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1759641761">
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="myproject_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS" Name="myproject_routed.rqs"/>
@@ -86,289 +86,193 @@
   <File Type="ROUTE-CLK" Name="myproject_clock_utilization_routed.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_CTRL_s_axi.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s.v"/>
-        <Attr Name="ImportTime" Val="1759620337"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_s.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_s.v"/>
-        <Attr Name="ImportTime" Val="1759620337"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_s.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_s.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_s.v"/>
-        <Attr Name="ImportTime" Val="1759620345"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_s.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_s.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_s.v"/>
-        <Attr Name="ImportTime" Val="1759620376"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare.v"/>
-        <Attr Name="ImportTime" Val="1759620353"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_s.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s.v"/>
-        <Attr Name="ImportTime" Val="1759620335"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s.v"/>
-        <Attr Name="ImportTime" Val="1759620366"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_fifo_w160_d238_A.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_fifo_w160_d238_A.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_fifo_w160_d238_A.v"/>
-        <Attr Name="ImportTime" Val="1759620378"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_fifo_w16_d1_S.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_fifo_w16_d1_S.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_fifo_w16_d1_S.v"/>
-        <Attr Name="ImportTime" Val="1759620378"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_fifo_w320_d247_A.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_fifo_w320_d247_A.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_fifo_w320_d247_A.v"/>
-        <Attr Name="ImportTime" Val="1759620378"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_flow_control_loop_pipe.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_flow_control_loop_pipe.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_flow_control_loop_pipe.v"/>
-        <Attr Name="ImportTime" Val="1759620379"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_flow_control_loop_pipe_sequential_init.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_flow_control_loop_pipe_sequential_init.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_flow_control_loop_pipe_sequential_init.v"/>
-        <Attr Name="ImportTime" Val="1759620379"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_hls_deadlock_detection_unit.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_regslice_both.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_hls_deadlock_detection_unit.v"/>
-        <Attr Name="ImportTime" Val="1759622306"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_hls_deadlock_idx0_monitor.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_s.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_hls_deadlock_idx0_monitor.v"/>
-        <Attr Name="ImportTime" Val="1759622306"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_mul_16s_16s_26_1_1.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_s.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_mul_16s_16s_26_1_1.v"/>
-        <Attr Name="ImportTime" Val="1759620335"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_regslice_both.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_regslice_both.v"/>
-        <Attr Name="ImportTime" Val="1759620379"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_s.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_s.v"/>
-        <Attr Name="ImportTime" Val="1759620351"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_s.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s_sigmoid_table_ROeOg.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_s.v"/>
-        <Attr Name="ImportTime" Val="1759620337"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_sparsemux_19_4_16_1_1.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s.v"/>
-        <Attr Name="ImportTime" Val="1759620334"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_void_conv_2d_buffer_bkb.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4fYi.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_void_conv_2d_buffer_bkb.v"/>
-        <Attr Name="ImportTime" Val="1759620334"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s.v"/>
-        <Attr Name="ImportTime" Val="1759620378"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s_sigmoid_table_ROeOg.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s_sigmoid_table_ROeOg.v"/>
-        <Attr Name="ImportTime" Val="1759620377"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_start_for_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0.v"/>
-        <Attr Name="ImportTime" Val="1759620378"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_start_for_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_start_for_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0.v"/>
-        <Attr Name="ImportTime" Val="1759620378"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0.v">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0.v"/>
-        <Attr Name="ImportTime" Val="1759620378"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_hls_deadlock_kernel_monitor_top.vh">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_hls_deadlock_kernel_monitor_top.vh"/>
-        <Attr Name="ImportTime" Val="1759622306"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-        <Attr Name="IsVisible" Val="1"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_hls_deadlock_report_unit.vh">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_hls_deadlock_report_unit.vh"/>
-        <Attr Name="ImportTime" Val="1759622306"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-        <Attr Name="IsVisible" Val="1"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject_hls_deadlock_detector.vh">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject_hls_deadlock_detector.vh"/>
-        <Attr Name="ImportTime" Val="1759622306"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-        <Attr Name="IsVisible" Val="1"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/verilog/myproject.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/hdl/verilog/myproject.v"/>
-        <Attr Name="ImportTime" Val="1759622306"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../export/hdl/verilog/myproject_hls_deadlock_report_unit.vh">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_void_conv_2d_buffer_bkb.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
-        <Attr Name="IsVisible" Val="1"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../export/hdl/verilog/myproject_hls_deadlock_kernel_monitor_top.vh">
+    <File Path="$PPRDIR/../hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s_sigmoid_table_ROeOg.dat">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
-        <Attr Name="IsVisible" Val="1"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../export/hdl/verilog/myproject_hls_deadlock_detector.vh">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-        <Attr Name="IsVisible" Val="1"/>
       </FileInfo>
     </File>
     <Config>
@@ -379,14 +283,6 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/imports/constraints/myproject_ooc.xdc">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../export/constraints/myproject_ooc.xdc"/>
-        <Attr Name="ImportTime" Val="1759622306"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>

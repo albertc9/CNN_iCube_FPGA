@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Sat Oct  4 17:44:47 2025
+| Date         : Sat Oct  4 22:21:28 2025
 | Host         : dhcp-172-31-232-100.mobile.uci.edu running 64-bit unknown
 | Command      : report_utilization -file myproject_utilization_synth.rpt -pb myproject_utilization_synth.pb
 | Design       : myproject
@@ -32,14 +32,14 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*               | 6277 |     0 |          0 |    216960 |  2.89 |
-|   LUT as Logic          | 6277 |     0 |          0 |    216960 |  2.89 |
+| CLB LUTs*               |  468 |     0 |          0 |    216960 |  0.22 |
+|   LUT as Logic          |  468 |     0 |          0 |    216960 |  0.22 |
 |   LUT as Memory         |    0 |     0 |          0 |     99840 |  0.00 |
-| CLB Registers           | 3049 |     0 |          0 |    433920 |  0.70 |
-|   Register as Flip Flop | 3049 |     0 |          0 |    433920 |  0.70 |
+| CLB Registers           |  449 |     0 |          0 |    433920 |  0.10 |
+|   Register as Flip Flop |  449 |     0 |          0 |    433920 |  0.10 |
 |   Register as Latch     |    0 |     0 |          0 |    433920 |  0.00 |
 | CARRY8                  |   50 |     0 |          0 |     27120 |  0.18 |
-| F7 Muxes                |    8 |     0 |          0 |    108480 | <0.01 |
+| F7 Muxes                |    0 |     0 |          0 |    108480 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |     54240 |  0.00 |
 | F9 Muxes                |    0 |     0 |          0 |     27120 |  0.00 |
 +-------------------------+------+-------+------------+-----------+-------+
@@ -61,22 +61,23 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 23    |          Yes |         Set |            - |
-| 3026  |          Yes |       Reset |            - |
+| 26    |          Yes |         Set |            - |
+| 423   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
 2. BLOCKRAM
 -----------
 
-+----------------+------+-------+------------+-----------+-------+
-|    Site Type   | Used | Fixed | Prohibited | Available | Util% |
-+----------------+------+-------+------------+-----------+-------+
-| Block RAM Tile |    0 |     0 |          0 |       480 |  0.00 |
-|   RAMB36/FIFO* |    0 |     0 |          0 |       480 |  0.00 |
-|   RAMB18       |    0 |     0 |          0 |       960 |  0.00 |
-| URAM           |    0 |     0 |          0 |        64 |  0.00 |
-+----------------+------+-------+------------+-----------+-------+
++-------------------+------+-------+------------+-----------+-------+
+|     Site Type     | Used | Fixed | Prohibited | Available | Util% |
++-------------------+------+-------+------------+-----------+-------+
+| Block RAM Tile    |  0.5 |     0 |          0 |       480 |  0.10 |
+|   RAMB36/FIFO*    |    0 |     0 |          0 |       480 |  0.00 |
+|   RAMB18          |    1 |     0 |          0 |       960 |  0.10 |
+|     RAMB18E2 only |    1 |       |            |           |       |
+| URAM              |    0 |     0 |          0 |        64 |  0.00 |
++-------------------+------+-------+------------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E2 or one FIFO18E2. However, if a FIFO18E2 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E2
 
 
@@ -93,11 +94,11 @@ Warning! LUT value is adjusted to account for LUT combining.
 4. I/O
 ------
 
-+------------+------+-------+------------+-----------+--------+
-|  Site Type | Used | Fixed | Prohibited | Available |  Util% |
-+------------+------+-------+------------+-----------+--------+
-| Bonded IOB |  344 |     0 |          0 |       280 | 122.86 |
-+------------+------+-------+------------+-----------+--------+
++------------+------+-------+------------+-----------+-------+
+|  Site Type | Used | Fixed | Prohibited | Available | Util% |
++------------+------+-------+------------+-----------+-------+
+| Bonded IOB |   81 |     0 |          0 |       280 | 28.93 |
++------------+------+-------+------------+-----------+-------+
 
 
 5. CLOCK
@@ -155,19 +156,19 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     | 3648 |                 CLB |
-| FDRE     | 3026 |            Register |
-| LUT5     | 1432 |                 CLB |
-| LUT4     | 1202 |                 CLB |
-| LUT2     |  779 |                 CLB |
-| LUT3     |  574 |                 CLB |
-| OBUF     |  339 |                 I/O |
+| FDRE     |  423 |            Register |
+| LUT2     |  234 |                 CLB |
+| LUT6     |   92 |                 CLB |
+| LUT5     |   88 |                 CLB |
+| LUT4     |   82 |                 CLB |
+| LUT3     |   63 |                 CLB |
+| OBUF     |   60 |                 I/O |
 | CARRY8   |   50 |                 CLB |
-| LUT1     |   28 |                 CLB |
-| FDSE     |   23 |            Register |
-| MUXF7    |    8 |                 CLB |
-| INBUF    |    5 |                 I/O |
-| IBUFCTRL |    5 |              Others |
+| LUT1     |   26 |                 CLB |
+| FDSE     |   26 |            Register |
+| INBUF    |   21 |                 I/O |
+| IBUFCTRL |   21 |              Others |
+| RAMB18E2 |    1 |            BLOCKRAM |
 | BUFGCE   |    1 |               Clock |
 +----------+------+---------------------+
 

@@ -33444,12 +33444,7 @@ typedef ap_fixed<18,8> dense_4_sigmoid_table_t;
 
 __attribute__((sdx_kernel("myproject", 0))) void myproject(
     hls::stream<input_t> &input_1,
-    hls::stream<result_t> &layer8_out,
-    conv2d_0_weight_t w2[800],
-    conv2d_0_bias_t b2[20],
-    conv2d_1_1_weight_t w4[2000],
-    conv2d_1_1_bias_t b4[10],
-    dense_4_weight_t w7[2380]
+    hls::stream<result_t> &layer8_out
 );
 # 4 "firmware/myproject.cpp" 2
 # 1 "firmware/parameters.h" 1
@@ -60816,8 +60811,8 @@ dense_4_bias_t b7[1] = {0.0786486045};
 struct config2_mult : nnet::dense_config {
     static const unsigned n_in = 40;
     static const unsigned n_out = 20;
-    static const unsigned reuse_factor = 1;
-    static const unsigned strategy = nnet::latency;
+    static const unsigned reuse_factor = 4;
+    static const unsigned strategy = nnet::resource;
     static const unsigned n_zeros = 0;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     typedef model_default_t accum_t;
@@ -60843,12 +60838,12 @@ struct config2 : nnet::conv2d_config {
     static const unsigned stride_width = 1;
     static const unsigned out_height = 1;
     static const unsigned out_width = 247;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 4;
     static const unsigned n_zeros = 0;
     static const unsigned multiplier_limit =
         ((kernel_size * n_chan * n_filt + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
-    static const unsigned strategy = nnet::latency;
+    static const unsigned strategy = nnet::resource;
     static const nnet::conv_implementation implementation = nnet::conv_implementation::linebuffer;
     static const unsigned min_height = 4;
     static const unsigned min_width = 7;
@@ -60873,7 +60868,7 @@ struct relu_config3 : nnet::activ_config {
     static const unsigned n_in = 4940;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 4;
     typedef conv2d_0_relu_table_t table_t;
 };
 
@@ -60881,8 +60876,8 @@ struct relu_config3 : nnet::activ_config {
 struct config4_mult : nnet::dense_config {
     static const unsigned n_in = 200;
     static const unsigned n_out = 10;
-    static const unsigned reuse_factor = 1;
-    static const unsigned strategy = nnet::latency;
+    static const unsigned reuse_factor = 4;
+    static const unsigned strategy = nnet::resource;
     static const unsigned n_zeros = 0;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     typedef model_default_t accum_t;
@@ -60908,12 +60903,12 @@ struct config4 : nnet::conv2d_config {
     static const unsigned stride_width = 1;
     static const unsigned out_height = 1;
     static const unsigned out_width = 238;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 4;
     static const unsigned n_zeros = 0;
     static const unsigned multiplier_limit =
         ((kernel_size * n_chan * n_filt + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
-    static const unsigned strategy = nnet::latency;
+    static const unsigned strategy = nnet::resource;
     static const nnet::conv_implementation implementation = nnet::conv_implementation::linebuffer;
     static const unsigned min_height = 1;
     static const unsigned min_width = 1;
@@ -60938,7 +60933,7 @@ struct relu_config5 : nnet::activ_config {
     static const unsigned n_in = 2380;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 4;
     typedef conv2d_1_1_relu_table_t table_t;
 };
 
@@ -60947,8 +60942,8 @@ struct config7 : nnet::dense_config {
     static const unsigned n_in = 2380;
     static const unsigned n_out = 1;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned strategy = nnet::latency;
-    static const unsigned reuse_factor = 1;
+    static const unsigned strategy = nnet::resource;
+    static const unsigned reuse_factor = 4;
     static const unsigned n_zeros = 0;
     static const unsigned n_nonzeros = 2380;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -60966,30 +60961,46 @@ struct sigmoid_config8 : nnet::activ_config {
     static const unsigned n_in = 1;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 4;
     typedef dense_4_sigmoid_table_t table_t;
 };
 # 5 "firmware/myproject.cpp" 2
 
 __attribute__((sdx_kernel("myproject", 0))) void myproject(
     hls::stream<input_t> &input_1,
-    hls::stream<result_t> &layer8_out,
-    conv2d_0_weight_t w2[800],
-    conv2d_0_bias_t b2[20],
-    conv2d_1_1_weight_t w4[2000],
-    conv2d_1_1_bias_t b4[10],
-    dense_4_weight_t w7[2380]
+    hls::stream<result_t> &layer8_out
 ) {
-#line 20 "/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/csynth.tcl"
+#line 183 "/home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/build_prj.tcl"
 #pragma HLSDIRECTIVE TOP name=myproject
-# 14 "firmware/myproject.cpp"
+# 9 "firmware/myproject.cpp"
+
+
+
+
+
+    static conv2d_0_weight_t w2[800];
+    static conv2d_0_bias_t b2[20];
+    static conv2d_1_1_weight_t w4[2000];
+    static conv2d_1_1_bias_t b4[10];
+    static dense_4_weight_t w7[2380];
+    static dense_4_bias_t b7[1];
+
 
 
 
 #pragma HLS INTERFACE axis port=input_1,layer8_out
-#pragma HLS INTERFACE bram port=w2,b2,w4,b4,w7
+#pragma HLS INTERFACE s_axilite port=return bundle=CTRL
+
+
+#pragma HLS BIND_STORAGE variable=w2 type=rom_1p impl=bram
+#pragma HLS BIND_STORAGE variable=b2 type=rom_1p impl=bram
+#pragma HLS BIND_STORAGE variable=w4 type=rom_1p impl=bram
+#pragma HLS BIND_STORAGE variable=b4 type=rom_1p impl=bram
+#pragma HLS BIND_STORAGE variable=w7 type=rom_1p impl=bram
+#pragma HLS BIND_STORAGE variable=b7 type=rom_1p impl=bram
+
 #pragma HLS DATAFLOW
-# 41 "firmware/myproject.cpp"
+# 57 "firmware/myproject.cpp"
  hls::stream<layer2_t> layer2_out("layer2_out");
 #pragma HLS STREAM variable=layer2_out depth=247
  nnet::conv_2d_cl<input_t, layer2_t, config2>(input_1, layer2_out, w2, b2);

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_s'" level="0">
-<item name = "Date">Sat Oct  4 16:25:37 2025
+<item name = "Date">Sat Oct  4 21:50:15 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.304 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 3.248 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,19 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4097, 415745, 20.485 us, 2.079 ms, 4097, 415745, no</column>
+<column name="">2049, 2049, 10.245 us, 10.245 us, 2049, 2049, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310">compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s, 2, 404, 10.000 ns, 2.020 us, 2, 404, no</column>
+<column name="call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62">compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- ReadInputHeight_ReadInputWidth">4096, 415744, 4 ~ 406, -, -, 1024, no</column>
+<column name="- ReadInputHeight_ReadInputWidth">2048, 2048, 2, -, -, 1024, no</column>
 </table>
 </item>
 </section>
@@ -51,19 +51,19 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 41, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 800, 17448, 24715, -</column>
+<column name="Instance">-, -, 130, 553, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 65, -</column>
-<column name="Register">-, -, 33, -, -</column>
+<column name="Multiplexer">-, -, -, 74, -</column>
+<column name="Register">-, -, 16, -, -</column>
 <specialColumn name="Available">960, 1824, 433920, 216960, 64</specialColumn>
-<specialColumn name="Utilization (%)">0, 43, 4, 11, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310">compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s, 0, 800, 17448, 24715, 0</column>
+<column name="call_ln57_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_62">compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s, 0, 0, 130, 553, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -80,18 +80,19 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln24_fu_448_p2">+, 0, 0, 18, 11, 1</column>
-<column name="ap_block_state2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln24_fu_442_p2">icmp, 0, 0, 19, 11, 12</column>
+<column name="add_ln51_fu_98_p2">+, 0, 0, 18, 11, 1</column>
+<column name="icmp_ln51_fu_92_p2">icmp, 0, 0, 19, 11, 12</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state3">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">20, 4, 1, 4</column>
 <column name="ap_done">9, 2, 1, 2</column>
-<column name="indvar_flatten_fu_180">9, 2, 11, 22</column>
+<column name="indvar_flatten_fu_52">9, 2, 11, 22</column>
 <column name="input_1_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="layer2_out_blk_n">9, 2, 1, 2</column>
 <column name="layer2_out_write">9, 2, 1, 2</column>
 <column name="real_start">9, 2, 1, 2</column>
 </table>
@@ -100,9 +101,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">3, 0, 3, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s_fu_310_ap_start_reg">1, 0, 1, 0</column>
-<column name="indvar_flatten_fu_180">11, 0, 11, 0</column>
-<column name="input_1_read_reg_569">16, 0, 16, 0</column>
+<column name="indvar_flatten_fu_52">11, 0, 11, 0</column>
 <column name="start_once_reg">1, 0, 1, 0</column>
 </table>
 </item>
@@ -131,36 +130,6 @@
 <column name="layer2_out_fifo_cap">in, 9, ap_fifo, layer2_out, pointer</column>
 <column name="layer2_out_full_n">in, 1, ap_fifo, layer2_out, pointer</column>
 <column name="layer2_out_write">out, 1, ap_fifo, layer2_out, pointer</column>
-<column name="w2_Addr_A">out, 32, bram, w2, array</column>
-<column name="w2_EN_A">out, 1, bram, w2, array</column>
-<column name="w2_WEN_A">out, 2, bram, w2, array</column>
-<column name="w2_Din_A">out, 16, bram, w2, array</column>
-<column name="w2_Dout_A">in, 16, bram, w2, array</column>
-<column name="w2_Addr_B">out, 32, bram, w2, array</column>
-<column name="w2_EN_B">out, 1, bram, w2, array</column>
-<column name="w2_WEN_B">out, 2, bram, w2, array</column>
-<column name="w2_Din_B">out, 16, bram, w2, array</column>
-<column name="w2_Dout_B">in, 16, bram, w2, array</column>
-<column name="b2_0">in, 16, ap_none, b2_0, pointer</column>
-<column name="b2_1">in, 16, ap_none, b2_1, pointer</column>
-<column name="b2_2">in, 16, ap_none, b2_2, pointer</column>
-<column name="b2_3">in, 16, ap_none, b2_3, pointer</column>
-<column name="b2_4">in, 16, ap_none, b2_4, pointer</column>
-<column name="b2_5">in, 16, ap_none, b2_5, pointer</column>
-<column name="b2_6">in, 16, ap_none, b2_6, pointer</column>
-<column name="b2_7">in, 16, ap_none, b2_7, pointer</column>
-<column name="b2_8">in, 16, ap_none, b2_8, pointer</column>
-<column name="b2_9">in, 16, ap_none, b2_9, pointer</column>
-<column name="b2_10">in, 16, ap_none, b2_10, pointer</column>
-<column name="b2_11">in, 16, ap_none, b2_11, pointer</column>
-<column name="b2_12">in, 16, ap_none, b2_12, pointer</column>
-<column name="b2_13">in, 16, ap_none, b2_13, pointer</column>
-<column name="b2_14">in, 16, ap_none, b2_14, pointer</column>
-<column name="b2_15">in, 16, ap_none, b2_15, pointer</column>
-<column name="b2_16">in, 16, ap_none, b2_16, pointer</column>
-<column name="b2_17">in, 16, ap_none, b2_17, pointer</column>
-<column name="b2_18">in, 16, ap_none, b2_18, pointer</column>
-<column name="b2_19">in, 16, ap_none, b2_19, pointer</column>
 </table>
 </item>
 </section>

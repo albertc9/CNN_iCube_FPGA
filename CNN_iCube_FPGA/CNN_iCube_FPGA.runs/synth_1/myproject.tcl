@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 8
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xcku5p-ffvb676-2-e
 
@@ -84,38 +85,33 @@ set_property ip_output_repo /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_i
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog {
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_hls_deadlock_kernel_monitor_top.vh
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_hls_deadlock_report_unit.vh
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_hls_deadlock_detector.vh
-}
+read_mem /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s_sigmoid_table_ROeOg.dat
 read_verilog -library xil_defaultlib {
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_s.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_s.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_s.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config7_s.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_fifo_w160_d238_A.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_fifo_w16_d1_S.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_fifo_w320_d247_A.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_flow_control_loop_pipe.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_flow_control_loop_pipe_sequential_init.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_hls_deadlock_detection_unit.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_hls_deadlock_idx0_monitor.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_mul_16s_16s_26_1_1.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_regslice_both.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_s.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_s.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_void_conv_2d_buffer_bkb.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s_sigmoid_table_ROeOg.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_start_for_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject_start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0.v
-  /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/sources_1/imports/verilog/myproject.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_CTRL_s_axi.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_20u_config2_s.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_20u_config2_s.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4_s.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_conv_2d_cl_array_array_ap_fixed_10u_config4_Pipeline_KernelShiftWidth.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_s.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_dense_array_array_ap_fixed_16_6_5_3_0_1u_config7_Pipeline_DataPrepare.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_fifo_w160_d238_A.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_fifo_w16_d1_S.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_fifo_w320_d247_A.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_flow_control_loop_pipe.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_flow_control_loop_pipe_sequential_init.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_regslice_both.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_s.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_s.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_s_sigmoid_table_ROeOg.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_sparsemux_19_4_16_1_1.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_start_for_conv_2d_cl_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_10u_config4fYi.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_start_for_dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_1u_config7_U0.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_start_for_relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config5_U0.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_start_for_relu_array_ap_fixed_20u_array_ap_fixed_16_6_5_3_0_20u_relu_config3_U0.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject_start_for_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config8_U0.v
+  /home/work1/Work/CNN_iCube_FPGA/hls_cnn_conv2d/myproject_prj/solution1/syn/verilog/myproject.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -126,9 +122,6 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/constrs_1/imports/constraints/myproject_ooc.xdc
-set_property used_in_implementation false [get_files /home/work1/Work/CNN_iCube_FPGA/CNN_iCube_FPGA/CNN_iCube_FPGA.srcs/constrs_1/imports/constraints/myproject_ooc.xdc]
-
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
